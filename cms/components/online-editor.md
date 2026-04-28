@@ -1,8 +1,68 @@
+---
+description: Mount the browser-based CMS admin app on a page of your published site.
+---
+
 # Online Editor
 
-Add this component to the page where you'd like your online editor to live. **Do not add any other components.**
+The **Online Editor** component embeds the [Online CMS Editor](../../online-cms-editor.md) into a page of your site, giving editors a browser-based interface for managing Markdown content and resources without opening Elements.
 
-A common place for your admin page would be in the same folder as your blog, for example your blog might live at `mywebsite.com/blog/`  so your admin page would be  `mywebsite.com/blog/admin` .
+You only need to add this component once. Once your site is published, visiting the page where this component lives is how you and your team sign in to edit content.
 
-Once you've published your website, simply visit this admin page to setup your online CMS account.
+### Where to place it
 
+The Online Editor needs its own dedicated page. A common convention is to place it alongside the content it manages — for example, an `/admin` page nested inside the same folder as your blog:
+
+* `mywebsite.com/blog/` — your blog index (a Collection).
+* `mywebsite.com/blog/post/` — your post page (an Item).
+* `mywebsite.com/blog/admin/` — the page hosting the Online Editor.
+
+You can put it anywhere you like, but keeping it close to the content makes the relationship obvious.
+
+{% hint style="warning" %}
+**Don't add any other components to the admin page.** The Online Editor takes over the full page and assumes nothing else is competing for the layout. Mixing it with Headings, Navigation, or other components will produce unpredictable results.
+{% endhint %}
+
+{% hint style="warning" %}
+The page hosting the Online Editor must use a `.php` extension and your server must meet the [System Requirements](../../getting-started/system-requirements.md) (PHP 8.4+, JavaScript enabled in the browser).
+{% endhint %}
+
+### First-time setup
+
+Once your site is published, visit the admin page in your browser — for example `https://mywebsite.com/blog/admin/`.
+
+On a fresh install you'll be guided through:
+
+1. Creating an account with an email and password.
+2. Choosing the workspace name (this is shown in the editor's chrome).
+3. Confirming the content folder and resources folder the editor should read from.
+
+After setup, the same URL becomes a sign-in page for any returning user.
+
+### Free vs. Pro features
+
+The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Pro unlocks multiple users and groups, multiple content and resources folders, sub-folder support, the Frontmatter UI Manager, webhooks, custom branding, and the license/domain manager.
+
+You can upgrade or downgrade at any time from **Workspace → License** inside the admin. See the [Online CMS Editor](../../online-cms-editor.md) overview for the full feature comparison.
+
+### Keeping content in sync with Elements
+
+Anything you create or edit in the Online Editor lives on the server only. Elements pushes content out, but doesn't currently pull changes back in.
+
+In practice that means:
+
+* Files added or edited online won't appear in the CMS folder inside Elements.
+* You can't manage online-only files from the Elements app.
+* Republishing from Elements may overwrite changes made online.
+
+If you have a team that does most of its editing in the browser, the safest workflow is to do _layout and design_ in Elements and _content edits_ online — and to coordinate before republishing.
+
+### Troubleshooting
+
+**The admin page is blank.**\
+The page extension is probably `.html` instead of `.php`. See [System Requirements](../../getting-started/system-requirements.md).
+
+**The page renders but the editor doesn't load.**\
+Check that JavaScript is enabled in the browser, and that the page contains _only_ the Online Editor component (no Navigation, Footer, or other layout components on the same page).
+
+**I forgot the admin password.**\
+Account passwords are stored on the server. If you've completely lost access, contact support — there's no built-in self-service reset path for the editor account at the moment. (The separate [Log Manager](../log-manager.md) password _can_ be reset by deleting its password file from the server.)
