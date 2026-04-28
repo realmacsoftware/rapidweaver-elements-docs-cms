@@ -55,10 +55,14 @@ You can access `{{collection.rssURL}}` inside the Collection component, which me
 
 #### Nested Properties
 
-Some properties like an image, contain multiple pieces of information. You can access these using dot notation:
+Some properties — like an image — contain multiple pieces of information. You can access these using dot notation:
 
-* `{{item.image.url}}` - Image URL
+* `{{item.image.src}}` - Image URL or path
 * `{{item.image.alt}}` - Image alt text
+* `{{item.image.title}}` - Image title (optional)
+* `{{item.image.width}}` and `{{item.image.height}}` - Image dimensions (optional)
+
+See [Frontmatter](markdown/frontmatter.md) for the full list of nested keys an image object supports, and how to define arrays of images for galleries.
 
 ### Related Data Properties
 
@@ -161,7 +165,7 @@ Once the relationships are established, you can access the full data from the re
             </div>
         </div>
     {% endif %}
-@enraw
+@endraw
 ```
 
 **Displaying Tags with Full Data:**
@@ -180,7 +184,7 @@ Once the relationships are established, you can access the full data from the re
             {% endfor %}
         </div>
     {% endif %}
-@endraw()
+@endraw
 ```
 
 **Note:** if you're using twig syntax directly in an Elements component template, you'll need to wrap the code in an `@raw()` directive.
