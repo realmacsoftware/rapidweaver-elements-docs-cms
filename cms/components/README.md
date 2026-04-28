@@ -39,11 +39,15 @@ These rely on the context of a single CMS item to work. Place them inside an Ite
 
 * [**Related Items**](related-items.md)\
   Surfaces other items that share tags or an author with the current one. Ideal for a "You might also like" section under a blog post.
+* [**Comments**](comments.md)\
+  Adds a moderated comments thread to the current item, with a built-in submission form and server-side storage.
 
-### Conditional rendering
+### Discovery and navigation
 
-* [**Conditional**](conditional.md)\
-  Shows or hides its contents based on the value of a frontmatter property on the current item. Use it to flag featured posts, hide drafts, or branch your layout when a value is set.
+* [**Search**](search.md)\
+  Adds an instant, client-side search box that filters CMS content as the visitor types. Results are rendered using a template you design.
+* [**Tag List**](tag-list.md)\
+  Renders every tag used in a Collection as a list of links, with optional post counts. The building block for a "Browse by topic" sidebar.
 
 ### Online editing
 
@@ -59,7 +63,9 @@ These rely on the context of a single CMS item to work. Place them inside an Ite
 | Add numbered page navigation to a long list                | [Collection Pagination](collection-pagination.md)      |
 | Add a "Load more" button to a long list                    | [Load More](load-more.md)                              |
 | Suggest related content under a post                       | [Related Items](related-items.md)                      |
-| Show or hide content based on frontmatter                  | [Conditional](conditional.md)                          |
+| Let visitors leave comments on a post                      | [Comments](comments.md)                                |
+| Add an instant search box                                  | [Search](search.md)                                    |
+| Show every tag in a collection as a list of links          | [Tag List](tag-list.md)                                |
 | Let editors manage content from the browser                | [Online Editor](online-editor.md)                      |
 
 ### How components access your data
