@@ -3,6 +3,27 @@
 * [Elements CMS](README.md)
 * [Online CMS Editor](online-cms-editor.md)
 
+## JSON REST API
+
+* [Overview](json-api/README.md)
+* [Installation](json-api/installation.md)
+* [Authentication and API Keys](json-api/authentication.md)
+* [Quickstart](json-api/quickstart.md)
+* [Guides](json-api/README.md#choose-your-path)
+  * [Headless Frontend](json-api/guides/headless-frontend.md)
+  * [Content Migration](json-api/guides/content-migration.md)
+  * [Uploads](json-api/guides/uploads.md)
+  * [Webhooks](json-api/guides/webhooks.md)
+* [Reference](json-api/reference/README.md)
+  * [Collections](json-api/reference/collections.md)
+  * [Items](json-api/reference/items.md)
+  * [Resources](json-api/reference/resources.md)
+  * [Versions](json-api/reference/versions.md)
+  * [Settings](json-api/reference/settings.md)
+  * [Search and Feeds](json-api/reference/search-and-feeds.md)
+* [Errors](json-api/errors.md)
+* [Changelog](json-api/changelog.md)
+
 ## Getting Started
 
 * [Quickstart](getting-started/quickstart.md)
