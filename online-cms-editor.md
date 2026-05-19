@@ -43,6 +43,10 @@ Elements CMS currently offers Solo and Studio plans. If you need to switch betwe
 * Custom Branding
 * License Manager / Domain Transfer
 
+#### JSON REST API
+
+Sites with JSON API access can create `api_...` keys from the Online Editor's API page. Those keys let headless frontends, apps, and migration scripts read and write CMS content over HTTPS. See the [JSON REST API](json-api/README.md) docs for installation, authentication, examples, and the full route reference.
+
 #### Important note about content sync
 
 If you add or edit Markdown files online (outside of Elements), you need to remember these changes will not be synced back down to Elements, they only exist on your server.

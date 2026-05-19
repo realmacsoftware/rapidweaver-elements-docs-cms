@@ -23,7 +23,7 @@ You can put it anywhere you like, but keeping it close to the content makes the 
 {% endhint %}
 
 {% hint style="warning" %}
-The page hosting the Online Editor must use a `.php` extension and your server must meet the [System Requirements](../../getting-started/system-requirements.md) (PHP 8.4+, JavaScript enabled in the browser).
+The page hosting the Online Editor must be published to a server that meets the [System Requirements](../../getting-started/system-requirements.md) (PHP 8.1+, JavaScript enabled in the browser).
 {% endhint %}
 
 ### First-time setup
@@ -37,6 +37,22 @@ On a fresh install you'll be guided through:
 3. Confirming the content folder and resources folder the editor should read from.
 
 After setup, the same URL becomes a sign-in page for any returning user.
+
+### Resetting the installation
+
+If you need to run first-time setup again, delete the Online Editor configuration file from the published site.
+
+{% hint style="warning" %}
+Deleting `config.php` removes the Online Editor setup, including the admin account, configured content folders, resource folders, and workspace settings. It does not delete your Markdown content or uploaded resources.
+{% endhint %}
+
+Before deleting anything, back up `config.php` if you might need the current settings later. Then connect to your server using FTP, SFTP, SSH, or your hosting file manager and find the Online Editor assets folder. The configuration file lives in the editor PHP folder:
+
+```text
+components/shared/assets/editor/php/config.php
+```
+
+Delete `php/config.php`, reload your admin page, and complete first-time setup again.
 
 ### Free vs. paid features
 
@@ -58,11 +74,8 @@ If you have a team that does most of its editing in the browser, the safest work
 
 ### Troubleshooting
 
-**The admin page is blank.**\
-The page extension is probably `.html` instead of `.php`. See [System Requirements](../../getting-started/system-requirements.md).
-
 **The page renders but the editor doesn't load.**\
 Check that JavaScript is enabled in the browser, and that the page contains _only_ the Online Editor component (no Navigation, Footer, or other layout components on the same page).
 
 **I forgot the admin password.**\
-Account passwords are stored on the server. If you've completely lost access, contact support — there's no built-in self-service reset path for the editor account at the moment. (The separate [Log Manager](../log-manager.md) password _can_ be reset by deleting its password file from the server.)
+Use the editor's **Forgot password?** flow if it is available on your sign-in page. If you need to discard the current editor account and run setup again, follow [Resetting the installation](#resetting-the-installation).
