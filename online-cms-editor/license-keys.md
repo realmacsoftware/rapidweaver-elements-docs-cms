@@ -15,7 +15,7 @@ If you lose your license key, try these options in order:
 2. Sign in to the [Creem customer portal](https://www.creem.io/my-orders/login) using the email address you used when purchasing.
 3. Open your Online CMS Editor installation and check the license details there.
 
-The Online CMS Editor can also take you to the Creem customer portal directly. Open the editor and click the **Billing** button to manage your order, subscription, and license information.
+The Online CMS Editor can also take you to the Creem customer portal directly. Open **Workspace > License** and click **Billing and Receipts** to manage your order, receipts, and license information.
 
 {% hint style="info" %}
 Creem sends customer portal access by email. If you request a portal link, check the same inbox you used for the original purchase.
