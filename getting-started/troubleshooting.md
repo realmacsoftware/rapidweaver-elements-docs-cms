@@ -120,6 +120,24 @@ Check that:
 * The page contains _only_ the Online Editor component, with no Navigation, Footer, or other layout components on the same page.
 * Your server meets the [System Requirements](system-requirements.md).
 
+#### I need to reset the Online Editor installation
+
+To run first-time setup again, delete the Online Editor's `config.php` file from the published site. Back it up first if you might need the current admin account, content folder, resource folder, or workspace settings.
+
+The file lives in the published editor assets PHP folder, equivalent to:
+
+```text
+components/shared/assets/editor/php/config.php
+```
+
+Connect to your server using FTP, SFTP, SSH, or your hosting file manager, delete `php/config.php`, then reload the admin page and complete setup again.
+
+{% hint style="warning" %}
+Deleting `config.php` removes the Online Editor setup/configuration, including the admin account and configured folders. It does not delete Markdown content or uploaded resources.
+{% endhint %}
+
+See [Resetting the installation](../cms/components/online-editor.md#resetting-the-installation) for the full Online Editor reset notes.
+
 #### Comments aren't appearing publicly
 
 Comments are moderated by default. New submissions wait for approval — sign into the [Online CMS Editor](../online-cms-editor.md) and approve them from the moderation view.
