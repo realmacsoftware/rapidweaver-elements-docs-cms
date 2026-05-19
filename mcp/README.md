@@ -115,7 +115,7 @@ For the full list of tools and example prompts, see the [Tools Reference](tools.
 
 | Area | What the assistant can do |
 | --- | --- |
-| **Content** | List collections, read items, create drafts, update posts, and delete items. |
+| **Content** | List and create collections, read items, create drafts, update posts, and delete items. |
 | **Resources and media** | List, upload, rename, move, delete files, and create resource subfolders. |
 | **Site settings** | Read theme settings, update theme settings as an owner, list users, and list webhooks. |
 | **Version history** | List versions, read a saved version, or restore an older version. |

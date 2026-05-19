@@ -30,6 +30,14 @@ Lists configured content collections, including each folder's index, label, path
 * **Inputs:** none.
 * **Example prompt:** _"What content collections does this site have?"_
 
+#### `content_create_collection`
+
+Creates and registers a new top-level content collection. If the directory does not exist, the CMS creates it recursively before registering the collection. When the destination is ambiguous, the assistant should confirm the server filesystem path before using this tool.
+
+* **Required:** `label` string, `path` string.
+* **Restriction:** admin role required.
+* **Example prompt:** _"Create a new content collection called Case Studies next to my blog folder."_
+
 #### `content_list_items`
 
 Lists Markdown items inside a collection. Licensed installs can also drill into a subfolder.
