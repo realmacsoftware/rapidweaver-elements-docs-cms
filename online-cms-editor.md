@@ -35,42 +35,13 @@ Elements CMS currently offers Solo and Studio plans. If you need to switch betwe
 * Multiple Users and Groups
 * Multiple Content Folders
 * Multiple Resources Folders
-* Webhook Support
+* [Webhook Support](webhooks.md)
 * Frontmatter UI Manager
 * Resize and Compress images on upload
 * Sub Folder support for Content and Uploads
 * Custom Appearance and Typography
 * Custom Branding
 * License Manager / Domain Transfer
-
-#### Webhooks
-
-Webhooks let the Online Editor notify another service when content or users change. They are useful for triggering deployments, sending notifications, updating search indexes, or connecting the CMS to another workflow.
-
-Webhooks are a Pro feature and are managed by owners inside the Online Editor:
-
-1. Open **Webhooks** in the Online Editor.
-2. Click **Add Webhook**.
-3. Enter an HTTPS endpoint URL.
-4. Choose the events the endpoint should receive.
-5. Save the webhook, then copy the signing secret immediately. The secret is only shown when the webhook is created.
-
-You can enable or disable a webhook without deleting it, edit its endpoint URL or selected events, and delete it when it is no longer needed.
-
-Supported events:
-
-| Event | Fires when |
-| --- | --- |
-| `file.created` | A content file is created. |
-| `file.updated` | A content file is updated, renamed, or restored from version history. |
-| `file.deleted` | A content file is deleted. |
-| `user.created` | A user account is created. |
-| `user.updated` | A user account is updated. |
-| `user.deleted` | A user account is deleted. |
-
-Each delivery is sent as a signed JSON `POST` request. The Online Editor attempts each delivery once and records the result in the webhook delivery log, including the event, endpoint URL, HTTP status, and any connection error.
-
-For payload examples, the `X-Webhook-Signature` header, and HMAC verification details, see the [Webhooks JSON API guide](json-api/guides/webhooks.md).
 
 #### JSON REST API
 
