@@ -7,21 +7,28 @@ icon: desktop
 
 ### Server Requirements
 
-These are the preliminary beta requirements for the Elements CMS, they will be updated over time as the software matures.
+Elements CMS runs on standard PHP hosting and does not require a database server.
 
-* The Elements CMS **requires PHP 8.4** or newer to be installed on your server, including the following PHP extension(s):
+* The Elements CMS **requires PHP 8.1** or newer to be installed on your server, including the following PHP extensions:
+  * **json**
+  * **session**
+  * **curl**
   * **mbstring**
+* The bundled Composer dependencies must be present. These are included with the CMS pack when it is published.
+* The Online Editor's PHP config directory must be writable so setup can save its configuration.
 * The PHP installation should be 'as usual'. If it is reduced or modified in any way, the CMS may not function properly.
 * Windows web servers are not officially supported.
 
 {% hint style="danger" %}
-Elements CMS [requires PHP 8.4](system-requirements.md) to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
+Elements CMS [requires PHP 8.1](system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
 {% endhint %}
 
 #### Online CMS Editor Requirements
 
-* The Online CMS Editor **requires PHP 8.4** or newer to be installed on your server.
-* Also requires Javascript to be enabled in your browser.
+* The Online CMS Editor **requires PHP 8.1** or newer to be installed on your server.
+* The Online Editor setup checks for the `json`, `session`, `curl`, and `mbstring` PHP extensions.
+* The Online Editor config directory must be writable.
+* Also requires JavaScript to be enabled in your browser.
 
 #### Check your PHP environment
 

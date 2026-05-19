@@ -10,7 +10,7 @@ Elements includes a built-in CMS that makes it easy to create a blog or content-
 The quickest way to get started is with the free Microblog project from the built-in Elements Store. This provides a working example of a CMS-powered blog, including post listings, individual post pages, and basic navigation.
 
 {% hint style="danger" %}
-Elements CMS [requires PHP 8.4](system-requirements.md) to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
+Elements CMS [requires PHP 8.1](system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
 {% endhint %}
 
 #### Microblog Project

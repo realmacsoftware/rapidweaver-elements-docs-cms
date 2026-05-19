@@ -23,7 +23,7 @@ You can put it anywhere you like, but keeping it close to the content makes the 
 {% endhint %}
 
 {% hint style="warning" %}
-The page hosting the Online Editor must use a `.php` extension and your server must meet the [System Requirements](../../getting-started/system-requirements.md) (PHP 8.4+, JavaScript enabled in the browser).
+The page hosting the Online Editor must be published to a server that meets the [System Requirements](../../getting-started/system-requirements.md) (PHP 8.1+, JavaScript enabled in the browser).
 {% endhint %}
 
 ### First-time setup
@@ -73,9 +73,6 @@ In practice that means:
 If you have a team that does most of its editing in the browser, the safest workflow is to do _layout and design_ in Elements and _content edits_ online — and to coordinate before republishing.
 
 ### Troubleshooting
-
-**The admin page is blank.**\
-The page extension is probably `.html` instead of `.php`. See [System Requirements](../../getting-started/system-requirements.md).
 
 **The page renders but the editor doesn't load.**\
 Check that JavaScript is enabled in the browser, and that the page contains _only_ the Online Editor component (no Navigation, Footer, or other layout components on the same page).

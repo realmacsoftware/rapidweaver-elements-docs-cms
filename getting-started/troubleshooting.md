@@ -8,7 +8,7 @@ icon: screwdriver-wrench
 Most CMS issues come down to a small set of root causes — a wrong page extension, a missing PHP extension, a filename casing mismatch, or a misconfigured `.htaccess`. This page walks through the symptoms you're likely to see, grouped by where they show up.
 
 {% hint style="danger" %}
-Elements CMS [requires PHP 8.4](system-requirements.md) to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
+Elements CMS [requires PHP 8.1](system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
 {% endhint %}
 
 ### Page-level issues
@@ -23,15 +23,16 @@ Open the page settings inside Elements and change the extension to `.php`. Re-pu
 
 Same root cause as above — the page extension is `.html`. When the rewrite or the framework executes the file as raw text, parts of the embedded code leak through. Fixing the extension fixes the error.
 
-If the error persists with a `.php` extension, check that your server's PHP version is 8.4 or newer. Older PHP versions will fail on syntax the CMS uses.
+If the error persists with a `.php` extension, check that your server's PHP version is 8.1 or newer. Older PHP versions will fail on syntax the CMS uses.
 
 #### A 500 Internal Server Error after publishing
 
-Three common causes, in order of likelihood:
+Common causes, in order of likelihood:
 
-1. **PHP version too old.** Confirm your server is running PHP 8.4 or newer. Many shared hosts default to an older version even if a newer one is available — you usually have to opt in via the control panel.
-2. **Missing PHP extension.** The CMS requires `mbstring`. Some hosts ship a stripped-down PHP build without it.
-3. **`.htaccess` syntax error.** If you've recently edited `.htaccess`, comment out your changes and reload — if the error goes away, your rewrite rules are the cause.
+1. **PHP version too old.** Confirm your server is running PHP 8.1 or newer. Many shared hosts default to an older version even if a newer one is available — you usually have to opt in via the control panel.
+2. **Missing PHP extension.** The CMS setup checks for `json`, `session`, `curl`, and `mbstring`. Some hosts ship a stripped-down PHP build without everything enabled.
+3. **The Online Editor config directory is not writable.** Setup needs to save its PHP configuration file on the server.
+4. **`.htaccess` syntax error.** If you've recently edited `.htaccess`, comment out your changes and reload — if the error goes away, your rewrite rules are the cause.
 
 The clearest diagnostic is your server's PHP error log. Most control panels expose it; if not, check `/error_log` next to the failing page.
 
@@ -107,10 +108,6 @@ The CMS caches the generated RSS file. Force a rebuild by appending `?regenerate
 Same pattern — append `?regenerate_sitemap=1` to the page's URL to force a regeneration.
 
 ### Online Editor issues
-
-#### The admin page is blank
-
-The page extension is `.html` instead of `.php`. The Online Editor needs PHP to run.
 
 #### The admin page renders but the editor doesn't load
 
