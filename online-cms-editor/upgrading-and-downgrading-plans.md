@@ -16,7 +16,7 @@ Once you have contacted support, deactivate your current license from the domain
 2. Go to **Workspace > License**.
 3. Select **Deactivate this domain**.
 
-This removes the current license from that installation. It does not automatically change the plan attached to the license.
+This automatically deactivates the current top-level domain and makes the license key available to use on another domain instantly. It does not automatically change the plan attached to the license.
 
 ## Purchase the plan you want
 

@@ -1,5 +1,5 @@
 ---
-description: Find and recover your Online CMS Editor license key.
+description: Find, recover, and manage your Online CMS Editor license key.
 icon: key
 ---
 
@@ -20,6 +20,28 @@ The Online CMS Editor can also take you to the Creem customer portal directly. O
 {% hint style="info" %}
 Creem sends customer portal access by email. If you request a portal link, check the same inbox you used for the original purchase.
 {% endhint %}
+
+## Domain coverage
+
+Each license key can be active on one top-level domain at a time. That license also covers all subdomains for the same top-level domain.
+
+For example, one license key covers all of these domains:
+
+* `mydomain.com`
+* `blog.mydomain.com`
+* `deep.blog.mydomain.com`
+
+You do not need a separate license key for each subdomain. If you want to use the same license key on a different top-level domain, first deactivate it from the current domain.
+
+## Deactivate a domain
+
+You can deactivate a license key from its current domain in the Online CMS Editor:
+
+1. Open the Online CMS Editor.
+2. Go to **Workspace > License**.
+3. Select **Deactivate this domain**.
+
+This automatically deactivates the current top-level domain and makes the license key available to use on another domain instantly.
 
 ## Still cannot find it?
 
