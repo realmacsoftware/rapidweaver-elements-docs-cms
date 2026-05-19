@@ -38,6 +38,22 @@ On a fresh install you'll be guided through:
 
 After setup, the same URL becomes a sign-in page for any returning user.
 
+### Resetting the installation
+
+If you need to run first-time setup again, delete the Online Editor configuration file from the published site.
+
+{% hint style="warning" %}
+Deleting `config.php` removes the Online Editor setup, including the admin account, configured content folders, resource folders, and workspace settings. It does not delete your Markdown content or uploaded resources.
+{% endhint %}
+
+Before deleting anything, back up `config.php` if you might need the current settings later. Then connect to your server using FTP, SFTP, SSH, or your hosting file manager and find the Online Editor assets folder. The configuration file lives in the editor PHP folder:
+
+```text
+components/shared/assets/editor/php/config.php
+```
+
+Delete `php/config.php`, reload your admin page, and complete first-time setup again.
+
 ### Free vs. Pro features
 
 The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Pro unlocks multiple users and groups, multiple content and resources folders, sub-folder support, the Frontmatter UI Manager, webhooks, custom branding, and the license/domain manager.
@@ -65,4 +81,4 @@ The page extension is probably `.html` instead of `.php`. See [System Requiremen
 Check that JavaScript is enabled in the browser, and that the page contains _only_ the Online Editor component (no Navigation, Footer, or other layout components on the same page).
 
 **I forgot the admin password.**\
-Account passwords are stored on the server. If you've completely lost access, contact support — there's no built-in self-service reset path for the editor account at the moment. (The separate [Log Manager](../log-manager.md) password _can_ be reset by deleting its password file from the server.)
+Use the editor's **Forgot password?** flow if it is available on your sign-in page. If you need to discard the current editor account and run setup again, follow [Resetting the installation](#resetting-the-installation).
