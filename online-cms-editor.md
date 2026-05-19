@@ -10,10 +10,10 @@ Built around Markdown, the admin lets you create, edit, and manage your content 
 
 For smaller websites, you can get started for free. You can edit a single collection of Markdown content and upload files directly through the admin, making it ideal for blogs and small websites.
 
-When your needs grow, the pro version unlocks support for multiple collections, more advanced content structures, and the flexibility required for larger client projects.
+When your needs grow, the Studio version unlocks support for multiple collections, more advanced content structures, AI writing tools, and the flexibility required for larger client projects.
 
 {% hint style="success" %}
-The Online CMS Editor is **free for smaller websites**. Upgrade to the Pro version when you need more.
+The Online CMS Editor is **free for smaller websites**. Upgrade when you need more.
 {% endhint %}
 
 ### Included for Free
@@ -28,7 +28,7 @@ The online CMS includes the following features for free:
 * Single Content Folder
 * Single Resources Folder
 
-#### Additionally with Pro Admin
+#### Additionally with Studio
 
 You can upgrade (or downgrade) at any time under Workspace > License in the online CMS Admin.
 
@@ -36,6 +36,7 @@ You can upgrade (or downgrade) at any time under Workspace > License in the onli
 * Multiple Content Folders
 * Multiple Resources Folders
 * Webhook Support
+* [AI Writing Assistant](ai-writing-assistant.md)
 * Frontmatter UI Manager
 * Resize and Compress images on upload
 * Sub Folder support for Content and Uploads

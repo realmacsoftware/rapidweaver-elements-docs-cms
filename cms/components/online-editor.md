@@ -54,9 +54,9 @@ components/shared/assets/editor/php/config.php
 
 Delete `php/config.php`, reload your admin page, and complete first-time setup again.
 
-### Free vs. Pro features
+### Free vs. Studio features
 
-The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Pro unlocks multiple users and groups, multiple content and resources folders, sub-folder support, the Frontmatter UI Manager, webhooks, custom branding, and the license/domain manager.
+The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Studio unlocks multiple users and groups, multiple content and resources folders, sub-folder support, the Frontmatter UI Manager, webhooks, custom branding, the license/domain manager, and the [AI Writing Assistant](../../ai-writing-assistant.md).
 
 You can upgrade or downgrade at any time from **Workspace → License** inside the admin. See the [Online CMS Editor](../../online-cms-editor.md) overview for the full feature comparison.
 

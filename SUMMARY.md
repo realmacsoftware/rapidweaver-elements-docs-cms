@@ -2,6 +2,7 @@
 
 * [Elements CMS](README.md)
 * [Online CMS Editor](online-cms-editor.md)
+  * [AI Writing Assistant](ai-writing-assistant.md)
 
 ## JSON REST API
 
