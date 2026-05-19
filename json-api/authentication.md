@@ -56,7 +56,7 @@ Using an `mcp_...` token against the JSON API returns `401 Unauthorized` with a 
 | --- | --- | --- |
 | `200` | OK | No action needed. |
 | `401` | No key, invalid key, or wrong key family. | Generate an `api_...` key on the Online Editor's API page. |
-| `402` | No active license with JSON API access. | Activate or upgrade under **License** in the Online Editor. |
+| `402` | No active license with JSON API access. | Activate a license with JSON API access, or see [Upgrading and Downgrading Plans](../upgrading-and-downgrading-plans.md). |
 | `403` | The key is valid, but the bound user lacks the role for this action. | Use a key bound to a user with the required role. |
 | `404` | Collection, item, or resource does not exist. | Check the URL and collection slug. |
 | `409` | Resource rename or move conflict. | Choose a different target name or destination. |

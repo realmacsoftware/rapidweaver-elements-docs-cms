@@ -10,10 +10,10 @@ Built around Markdown, the admin lets you create, edit, and manage your content 
 
 For smaller websites, you can get started for free. You can edit a single collection of Markdown content and upload files directly through the admin, making it ideal for blogs and small websites.
 
-When your needs grow, the pro version unlocks support for multiple collections, more advanced content structures, and the flexibility required for larger client projects.
+When your needs grow, paid plans unlock support for multiple collections, more advanced content structures, and the flexibility required for larger client projects.
 
 {% hint style="success" %}
-The Online CMS Editor is **free for smaller websites**. Upgrade to the Pro version when you need more.
+The Online CMS Editor is **free for smaller websites**. Choose a paid plan when you need more.
 {% endhint %}
 
 ### Included for Free
@@ -28,9 +28,9 @@ The online CMS includes the following features for free:
 * Single Content Folder
 * Single Resources Folder
 
-#### Additionally with Pro Admin
+#### Additionally with Paid Plans
 
-You can upgrade (or downgrade) at any time under Workspace > License in the online CMS Admin.
+Elements CMS currently offers Solo and Studio plans. If you need to switch between them, see [Upgrading and Downgrading Plans](upgrading-and-downgrading-plans.md).
 
 * Multiple Users and Groups
 * Multiple Content Folders
