@@ -41,7 +41,7 @@ There is no database. Comments are plain data on disk, just like the rest of you
 
 ### Moderation
 
-Every submission lands in a pending state. To approve, edit, or delete comments, open the [Online CMS Editor](../../online-cms-editor.md) and use its moderation views. Approved comments appear on the published page on the next request.
+Every submission lands in a pending state. To approve, edit, or delete comments, open the [Online CMS Editor](../../online-cms-editor/) and use its moderation views. Approved comments appear on the published page on the next request.
 
 {% hint style="info" %}
 The submission form includes a hidden honeypot field and a load-time stamp to filter out the most obvious bot traffic. It is not a substitute for moderation — review every comment before approving it.
@@ -70,7 +70,7 @@ Inside Elements, the Comments component renders a small placeholder explaining t
 The Comments component isn't inside an Item. Move it into the Item component (typically the After drop zone, below the post body).
 
 **Submissions appear successful but never show up publicly.**\
-That's expected — comments wait for approval. Sign into the [Online CMS Editor](../../online-cms-editor.md) to moderate them.
+That's expected — comments wait for approval. Sign into the [Online CMS Editor](../../online-cms-editor/) to moderate them.
 
 **The form submits but reports a generic error.**\
 Check that the page extension is `.php`, and that the server meets the [System Requirements](../../getting-started/system-requirements.md). The form posts to the CMS API endpoint, which won't be present on a plain HTML host.

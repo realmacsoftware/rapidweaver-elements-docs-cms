@@ -1,8 +1,15 @@
 # Table of contents
 
 * [Elements CMS](README.md)
-* [Online CMS Editor](online-cms-editor.md)
-  * [AI Writing Assistant](ai-writing-assistant.md)
+* [Online CMS Editor](online-cms-editor/README.md)
+  * [AI Writing Assistant](online-cms-editor/ai-writing-assistant.md)
+  * [Webhooks](online-cms-editor/webhooks.md)
+  * [Upgrading and Downgrading Plans](online-cms-editor/upgrading-and-downgrading-plans.md)
+
+## MCP Server
+
+* [Overview and Setup](mcp/README.md)
+* [Tools Reference](mcp/tools.md)
 
 ## JSON REST API
 
@@ -10,11 +17,6 @@
 * [Installation](json-api/installation.md)
 * [Authentication and API Keys](json-api/authentication.md)
 * [Quickstart](json-api/quickstart.md)
-* [Guides](json-api/README.md#choose-your-path)
-  * [Headless Frontend](json-api/guides/headless-frontend.md)
-  * [Content Migration](json-api/guides/content-migration.md)
-  * [Uploads](json-api/guides/uploads.md)
-  * [Webhooks](json-api/guides/webhooks.md)
 * [Reference](json-api/reference/README.md)
   * [Collections](json-api/reference/collections.md)
   * [Items](json-api/reference/items.md)

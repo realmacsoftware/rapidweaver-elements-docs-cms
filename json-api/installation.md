@@ -21,7 +21,7 @@ No extra build step is needed. The API ships with the published CMS bundle.
 
 The API entry point is served by the site as:
 
-```text
+```
 https://example.test/api/
 ```
 
@@ -37,11 +37,11 @@ curl -i https://example.test/api/
 
 Useful non-200 responses:
 
-| Status | Meaning | Fix |
-| --- | --- | --- |
-| `402 Payment Required` | The API is reachable, but this domain does not have JSON API access. | Activate or upgrade under **License** in the Online Editor. |
-| `401 Unauthorized` | The route needs authentication. | Create and send an `api_...` key. |
-| `500 Internal Server Error` | The server could not run the API route. | Check PHP configuration and the server error log. |
+| Status                      | Meaning                                                              | Fix                                                                                                                                         |
+| --------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `402 Payment Required`      | The API is reachable, but this domain does not have JSON API access. | Activate a license with JSON API access, or see [Upgrading and Downgrading Plans](../online-cms-editor/upgrading-and-downgrading-plans.md). |
+| `401 Unauthorized`          | The route needs authentication.                                      | Create and send an `api_...` key.                                                                                                           |
+| `500 Internal Server Error` | The server could not run the API route.                              | Check PHP configuration and the server error log.                                                                                           |
 
 ### Request an API key
 

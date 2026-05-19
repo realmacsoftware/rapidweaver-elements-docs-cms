@@ -8,7 +8,7 @@ icon: key
 Every authenticated route on the JSON REST API uses a Bearer key prefixed with `api_`.
 
 {% hint style="info" %}
-`api_` keys and `mcp_` tokens are separate. `api_...` keys authenticate the JSON REST API documented here. `mcp_...` tokens authenticate the Model Context Protocol endpoint used by AI agents. The two key families do not work interchangeably.
+`api_` keys and `mcp_` tokens are separate. `api_...` keys authenticate the JSON REST API documented here. `mcp_...` tokens authenticate the [MCP server](../mcp/) used by AI agents. The two key families do not work interchangeably.
 {% endhint %}
 
 ### How keys work
@@ -24,13 +24,13 @@ Every authenticated route on the JSON REST API uses a Bearer key prefixed with `
 
 Preferred header:
 
-```text
+```
 Authorization: Bearer api_exampletoken000000000000
 ```
 
 Fallback query string, for clients that cannot set custom headers:
 
-```text
+```
 https://example.test/api/cms/collections/blog/items?token=api_exampletoken000000000000
 ```
 
@@ -48,18 +48,18 @@ Expected: `200 OK` with a JSON body describing the API.
 
 ### Wrong key family
 
-Using an `mcp_...` token against the JSON API returns `401 Unauthorized` with a message explaining that MCP tokens belong to the MCP endpoint, not the JSON REST API.
+Using an `mcp_...` token against the JSON API returns `401 Unauthorized` with a message explaining that MCP tokens belong to the [MCP endpoint](../mcp/), not the JSON REST API.
 
 ### Status codes
 
-| Code | Meaning | Typical fix |
-| --- | --- | --- |
-| `200` | OK | No action needed. |
-| `401` | No key, invalid key, or wrong key family. | Generate an `api_...` key on the Online Editor's API page. |
-| `402` | No active license with JSON API access. | Activate or upgrade under **License** in the Online Editor. |
-| `403` | The key is valid, but the bound user lacks the role for this action. | Use a key bound to a user with the required role. |
-| `404` | Collection, item, or resource does not exist. | Check the URL and collection slug. |
-| `409` | Resource rename or move conflict. | Choose a different target name or destination. |
+| Code  | Meaning                                                              | Typical fix                                                                                                                                 |
+| ----- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `200` | OK                                                                   | No action needed.                                                                                                                           |
+| `401` | No key, invalid key, or wrong key family.                            | Generate an `api_...` key on the Online Editor's API page.                                                                                  |
+| `402` | No active license with JSON API access.                              | Activate a license with JSON API access, or see [Upgrading and Downgrading Plans](../online-cms-editor/upgrading-and-downgrading-plans.md). |
+| `403` | The key is valid, but the bound user lacks the role for this action. | Use a key bound to a user with the required role.                                                                                           |
+| `404` | Collection, item, or resource does not exist.                        | Check the URL and collection slug.                                                                                                          |
+| `409` | Resource rename or move conflict.                                    | Choose a different target name or destination.                                                                                              |
 
 See [Errors](errors.md) for the full response envelope and troubleshooting checklist.
 

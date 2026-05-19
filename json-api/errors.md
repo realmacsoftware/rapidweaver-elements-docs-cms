@@ -43,16 +43,16 @@ For envelope failures, the HTTP status matches `code`. Editor-bridged failures s
 
 ### Status codes
 
-| Code | Meaning | When | Fix |
-| --- | --- | --- | --- |
-| `200` | OK | Success. | No action needed. |
-| `400` | Bad Request | Required field missing, malformed JSON, wrong shape. | Read `error` and fix the request. |
-| `401` | Unauthorized | No key, invalid key, or wrong key family. | Send a valid `api_...` key. |
-| `402` | Payment Required | Site has no active license with JSON API access. | Activate or upgrade under **License** in the Online Editor. |
-| `403` | Forbidden | Same-server origin check failed or the user lacks the required role. | Send a key or use a key bound to a higher-role user. |
-| `404` | Not Found | Collection, item, or resource does not exist. | Check the slug, filename, or collection identifier. |
-| `409` | Conflict | Resource rename or move target already exists. | Choose a new name or destination. |
-| `500` | Server Error | Handler crashed. | Check the web server's PHP error log. |
+| Code  | Meaning          | When                                                                 | Fix                                                                                                                                         |
+| ----- | ---------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `200` | OK               | Success.                                                             | No action needed.                                                                                                                           |
+| `400` | Bad Request      | Required field missing, malformed JSON, wrong shape.                 | Read `error` and fix the request.                                                                                                           |
+| `401` | Unauthorized     | No key, invalid key, or wrong key family.                            | Send a valid `api_...` key.                                                                                                                 |
+| `402` | Payment Required | Site has no active license with JSON API access.                     | Activate a license with JSON API access, or see [Upgrading and Downgrading Plans](../online-cms-editor/upgrading-and-downgrading-plans.md). |
+| `403` | Forbidden        | Same-server origin check failed or the user lacks the required role. | Send a key or use a key bound to a higher-role user.                                                                                        |
+| `404` | Not Found        | Collection, item, or resource does not exist.                        | Check the slug, filename, or collection identifier.                                                                                         |
+| `409` | Conflict         | Resource rename or move target already exists.                       | Choose a new name or destination.                                                                                                           |
+| `500` | Server Error     | Handler crashed.                                                     | Check the web server's PHP error log.                                                                                                       |
 
 ### Troubleshooting checklist
 

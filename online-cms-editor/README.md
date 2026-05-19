@@ -10,10 +10,10 @@ Built around Markdown, the admin lets you create, edit, and manage your content 
 
 For smaller websites, you can get started for free. You can edit a single collection of Markdown content and upload files directly through the admin, making it ideal for blogs and small websites.
 
-When your needs grow, the Studio version unlocks support for multiple collections, more advanced content structures, AI writing tools, and the flexibility required for larger client projects.
+When your needs grow, paid plans unlock support for multiple collections, more advanced content structures, AI writing tools, and the flexibility required for larger client projects.
 
 {% hint style="success" %}
-The Online CMS Editor is **free for smaller websites**. Upgrade when you need more.
+The Online CMS Editor is **free for smaller websites**. Choose a paid plan when you need more.
 {% endhint %}
 
 ### Included for Free
@@ -28,15 +28,15 @@ The online CMS includes the following features for free:
 * Single Content Folder
 * Single Resources Folder
 
-#### Additionally with Studio
+#### Additionally with Paid Plans
 
-You can upgrade (or downgrade) at any time under Workspace > License in the online CMS Admin.
+Elements CMS currently offers Solo and Studio plans. If you need to switch between them, see [Upgrading and Downgrading Plans](upgrading-and-downgrading-plans.md).
 
 * Multiple Users and Groups
 * Multiple Content Folders
 * Multiple Resources Folders
-* Webhook Support
-* [AI Writing Assistant](ai-writing-assistant.md)
+* [Webhook Support](webhooks.md)
+* [AI Writing Assistant](ai-writing-assistant.md) (Studio)
 * Frontmatter UI Manager
 * Resize and Compress images on upload
 * Sub Folder support for Content and Uploads
@@ -46,7 +46,11 @@ You can upgrade (or downgrade) at any time under Workspace > License in the onli
 
 #### JSON REST API
 
-Sites with JSON API access can create `api_...` keys from the Online Editor's API page. Those keys let headless frontends, apps, and migration scripts read and write CMS content over HTTPS. See the [JSON REST API](json-api/README.md) docs for installation, authentication, examples, and the full route reference.
+Sites with JSON API access can create `api_...` keys from the Online Editor's API page. Those keys let headless frontends, apps, and migration scripts read and write CMS content over HTTPS. See the [JSON REST API](../json-api/) docs for installation, authentication, examples, and the full route reference.
+
+#### MCP Server
+
+Sites with MCP access can connect Claude, Cursor, MCP Inspector, and other MCP-compatible AI assistants from **AI** > **Connections** in the Online Editor. The assistant can act as a chosen user to read, edit, upload, and manage CMS content through conversation. See the [MCP Server](../mcp/) docs for setup, connection methods, security notes, and the full tools reference.
 
 #### Important note about content sync
 

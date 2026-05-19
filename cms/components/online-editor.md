@@ -4,7 +4,7 @@ description: Mount the browser-based CMS admin app on a page of your published s
 
 # Online Editor
 
-The **Online Editor** component embeds the [Online CMS Editor](../../online-cms-editor.md) into a page of your site, giving editors a browser-based interface for managing Markdown content and resources without opening Elements.
+The **Online Editor** component embeds the [Online CMS Editor](../../online-cms-editor/) into a page of your site, giving editors a browser-based interface for managing Markdown content and resources without opening Elements.
 
 You only need to add this component once. Once your site is published, visiting the page where this component lives is how you and your team sign in to edit content.
 
@@ -48,17 +48,17 @@ Deleting `config.php` removes the Online Editor setup, including the admin accou
 
 Before deleting anything, back up `config.php` if you might need the current settings later. Then connect to your server using FTP, SFTP, SSH, or your hosting file manager and find the Online Editor assets folder. The configuration file lives in the editor PHP folder:
 
-```text
+```
 components/shared/assets/editor/php/config.php
 ```
 
 Delete `php/config.php`, reload your admin page, and complete first-time setup again.
 
-### Free vs. Studio features
+### Free vs. paid features
 
-The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Studio unlocks multiple users and groups, multiple content and resources folders, sub-folder support, the Frontmatter UI Manager, webhooks, custom branding, the license/domain manager, and the [AI Writing Assistant](../../ai-writing-assistant.md).
+The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Paid plans unlock multiple users and groups, multiple content and resources folders, sub-folder support, the Frontmatter UI Manager, webhooks, custom branding, and the license/domain manager. Studio also includes the [AI Writing Assistant](../../online-cms-editor/ai-writing-assistant.md).
 
-You can upgrade or downgrade at any time from **Workspace → License** inside the admin. See the [Online CMS Editor](../../online-cms-editor.md) overview for the full feature comparison.
+Elements CMS currently offers Solo and Studio plans. If you need to switch between them, see [Upgrading and Downgrading Plans](../../online-cms-editor/upgrading-and-downgrading-plans.md). See the [Online CMS Editor](../../online-cms-editor/) overview for the full feature comparison.
 
 ### Keeping content in sync with Elements
 
@@ -78,4 +78,4 @@ If you have a team that does most of its editing in the browser, the safest work
 Check that JavaScript is enabled in the browser, and that the page contains _only_ the Online Editor component (no Navigation, Footer, or other layout components on the same page).
 
 **I forgot the admin password.**\
-Use the editor's **Forgot password?** flow if it is available on your sign-in page. If you need to discard the current editor account and run setup again, follow [Resetting the installation](#resetting-the-installation).
+Use the editor's **Forgot password?** flow if it is available on your sign-in page. If you need to discard the current editor account and run setup again, follow [Resetting the installation](online-editor.md#resetting-the-installation).
