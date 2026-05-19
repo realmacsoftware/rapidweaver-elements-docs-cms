@@ -3,6 +3,11 @@
 * [Elements CMS](README.md)
 * [Online CMS Editor](online-cms-editor.md)
 
+## MCP Server
+
+* [Overview and Setup](mcp/README.md)
+* [Tools Reference](mcp/tools.md)
+
 ## JSON REST API
 
 * [Overview](json-api/README.md)

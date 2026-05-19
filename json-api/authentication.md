@@ -8,7 +8,7 @@ icon: key
 Every authenticated route on the JSON REST API uses a Bearer key prefixed with `api_`.
 
 {% hint style="info" %}
-`api_` keys and `mcp_` tokens are separate. `api_...` keys authenticate the JSON REST API documented here. `mcp_...` tokens authenticate the Model Context Protocol endpoint used by AI agents. The two key families do not work interchangeably.
+`api_` keys and `mcp_` tokens are separate. `api_...` keys authenticate the JSON REST API documented here. `mcp_...` tokens authenticate the [MCP server](../mcp/README.md) used by AI agents. The two key families do not work interchangeably.
 {% endhint %}
 
 ### How keys work
@@ -48,7 +48,7 @@ Expected: `200 OK` with a JSON body describing the API.
 
 ### Wrong key family
 
-Using an `mcp_...` token against the JSON API returns `401 Unauthorized` with a message explaining that MCP tokens belong to the MCP endpoint, not the JSON REST API.
+Using an `mcp_...` token against the JSON API returns `401 Unauthorized` with a message explaining that MCP tokens belong to the [MCP endpoint](../mcp/README.md), not the JSON REST API.
 
 ### Status codes
 

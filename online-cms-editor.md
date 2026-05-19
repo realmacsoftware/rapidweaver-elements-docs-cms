@@ -47,6 +47,10 @@ You can upgrade (or downgrade) at any time under Workspace > License in the onli
 
 Sites with JSON API access can create `api_...` keys from the Online Editor's API page. Those keys let headless frontends, apps, and migration scripts read and write CMS content over HTTPS. See the [JSON REST API](json-api/README.md) docs for installation, authentication, examples, and the full route reference.
 
+#### MCP Server
+
+Sites with MCP access can connect Claude, Cursor, MCP Inspector, and other MCP-compatible AI assistants from **AI** > **Connections** in the Online Editor. The assistant can act as a chosen user to read, edit, upload, and manage CMS content through conversation. See the [MCP Server](mcp/README.md) docs for setup, connection methods, security notes, and the full tools reference.
+
 #### Important note about content sync
 
 If you add or edit Markdown files online (outside of Elements), you need to remember these changes will not be synced back down to Elements, they only exist on your server.
