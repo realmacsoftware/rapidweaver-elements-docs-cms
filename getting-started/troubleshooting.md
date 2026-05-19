@@ -109,10 +109,6 @@ Same pattern — append `?regenerate_sitemap=1` to the page's URL to force a reg
 
 ### Online Editor issues
 
-#### The admin page is blank
-
-The page extension is `.html` instead of `.php`. The Online Editor needs PHP to run.
-
 #### The admin page renders but the editor doesn't load
 
 Check that:
