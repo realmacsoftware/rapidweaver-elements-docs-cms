@@ -56,7 +56,7 @@ Delete `php/config.php`, reload your admin page, and complete first-time setup a
 
 ### Free vs. paid features
 
-The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Paid plans unlock multiple users and groups, multiple content and resources folders, sub-folder support, the Frontmatter UI Manager, webhooks, custom branding, and the license/domain manager.
+The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Paid plans unlock multiple users and groups, multiple content and resources folders, sub-folder support, the Frontmatter UI Manager, webhooks, custom branding, and the license/domain manager. Studio also includes the [AI Writing Assistant](../../online-cms-editor/ai-writing-assistant.md).
 
 Elements CMS currently offers Solo and Studio plans. If you need to switch between them, see [Upgrading and Downgrading Plans](../../online-cms-editor/upgrading-and-downgrading-plans.md). See the [Online CMS Editor](../../online-cms-editor/) overview for the full feature comparison.
 

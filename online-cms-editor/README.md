@@ -10,7 +10,7 @@ Built around Markdown, the admin lets you create, edit, and manage your content 
 
 For smaller websites, you can get started for free. You can edit a single collection of Markdown content and upload files directly through the admin, making it ideal for blogs and small websites.
 
-When your needs grow, paid plans unlock support for multiple collections, more advanced content structures, and the flexibility required for larger client projects.
+When your needs grow, paid plans unlock support for multiple collections, more advanced content structures, AI writing tools, and the flexibility required for larger client projects.
 
 {% hint style="success" %}
 The Online CMS Editor is **free for smaller websites**. Choose a paid plan when you need more.
@@ -36,6 +36,7 @@ Elements CMS currently offers Solo and Studio plans. If you need to switch betwe
 * Multiple Content Folders
 * Multiple Resources Folders
 * [Webhook Support](webhooks.md)
+* [AI Writing Assistant](ai-writing-assistant.md) (Studio)
 * Frontmatter UI Manager
 * Resize and Compress images on upload
 * Sub Folder support for Content and Uploads

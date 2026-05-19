@@ -2,6 +2,7 @@
 
 * [Elements CMS](README.md)
 * [Online CMS Editor](online-cms-editor/README.md)
+  * [AI Writing Assistant](online-cms-editor/ai-writing-assistant.md)
   * [Webhooks](online-cms-editor/webhooks.md)
   * [Upgrading and Downgrading Plans](online-cms-editor/upgrading-and-downgrading-plans.md)
 
