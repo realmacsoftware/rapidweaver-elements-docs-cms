@@ -9,7 +9,9 @@ When a content item changes, the CMS can `POST` a payload to a URL you choose. W
 
 ### Configure subscriptions
 
-Webhook subscriptions are managed in the Online Editor under **Webhooks**. The REST API exposes read-only webhook settings at `GET /cms/settings/webhooks`; webhook create, update, and delete are handled in the Online Editor.
+Webhook subscriptions are managed in the Online Editor under **Webhooks**. For setup steps, event selection, signing-secret handling, and the delivery log, see [Webhooks in the Online CMS Editor](../../online-cms-editor.md#webhooks).
+
+The REST API exposes read-only webhook settings at `GET /cms/settings/webhooks`; webhook create, update, and delete are handled in the Online Editor.
 
 ### Events
 
@@ -19,6 +21,8 @@ Webhook subscriptions are managed in the Online Editor under **Webhooks**. The R
 | `file.updated` | An existing content file changes or a version is restored. |
 | `file.deleted` | A content file is removed. |
 | `user.created` | A user is created in the Online Editor. |
+| `user.updated` | A user is updated in the Online Editor. |
+| `user.deleted` | A user is deleted in the Online Editor. |
 
 Each subscription carries the list of events it cares about. The CMS filters at dispatch time.
 
