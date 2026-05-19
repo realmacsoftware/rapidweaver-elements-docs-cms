@@ -123,7 +123,7 @@ To run first-time setup again, delete the Online Editor's `config.php` file from
 
 The file lives in the published editor assets PHP folder, equivalent to:
 
-```text
+```
 components/shared/assets/editor/php/config.php
 ```
 
@@ -137,7 +137,7 @@ See [Resetting the installation](../cms/components/online-editor.md#resetting-th
 
 #### Comments aren't appearing publicly
 
-Comments are moderated by default. New submissions wait for approval — sign into the [Online CMS Editor](../online-cms-editor.md) and approve them from the moderation view.
+Comments are moderated by default. New submissions wait for approval — sign into the [Online CMS Editor](../online-cms-editor/) and approve them from the moderation view.
 
 ### Performance and logs
 

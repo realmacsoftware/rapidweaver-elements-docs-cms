@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Elements CMS](README.md)
-* [Online CMS Editor](online-cms-editor.md)
-* [Webhooks](webhooks.md)
-* [Upgrading and Downgrading Plans](upgrading-and-downgrading-plans.md)
+* [Online CMS Editor](online-cms-editor/README.md)
+  * [Webhooks](online-cms-editor/webhooks.md)
+  * [Upgrading and Downgrading Plans](online-cms-editor/upgrading-and-downgrading-plans.md)
 
 ## MCP Server
 
