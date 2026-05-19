@@ -35,7 +35,7 @@ Elements CMS currently offers Solo and Studio plans. If you need to switch betwe
 * Multiple Users and Groups
 * Multiple Content Folders
 * Multiple Resources Folders
-* Webhook Support
+* [Webhook Support](webhooks.md)
 * Frontmatter UI Manager
 * Resize and Compress images on upload
 * Sub Folder support for Content and Uploads
