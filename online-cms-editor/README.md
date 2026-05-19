@@ -12,6 +12,8 @@ For smaller websites, you can get started for free. You can edit a single collec
 
 When your needs grow, paid plans unlock support for multiple collections, more advanced content structures, AI writing tools, and the flexibility required for larger client projects.
 
+If you need to find or recover your license key, see [License Keys](license-keys.md).
+
 {% hint style="success" %}
 The Online CMS Editor is **free for smaller websites**. Choose a paid plan when you need more.
 {% endhint %}
