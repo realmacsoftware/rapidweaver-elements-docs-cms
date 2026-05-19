@@ -7,6 +7,8 @@ icon: code
 
 The Elements CMS Online Editor includes a token-authenticated JSON REST API for headless use. Your apps, mobile clients, static builds, and migration scripts can read and write CMS content over HTTPS with a simple `Authorization: Bearer api_...` header.
 
+If you want Claude, Cursor, or another AI assistant to manage the CMS through conversation, use the [MCP Server](../mcp/README.md) instead.
+
 {% hint style="warning" %}
 **Studio / JSON API access is required.** Every `/api/*` route, including public reads, requires an active license for the site's domain with JSON API access enabled. Without one, every request returns `402 Payment Required`.
 {% endhint %}

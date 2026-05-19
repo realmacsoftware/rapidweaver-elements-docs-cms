@@ -4,6 +4,11 @@
 * [Online CMS Editor](online-cms-editor.md)
 * [Upgrading and Downgrading Plans](upgrading-and-downgrading-plans.md)
 
+## MCP Server
+
+* [Overview and Setup](mcp/README.md)
+* [Tools Reference](mcp/tools.md)
+
 ## JSON REST API
 
 * [Overview](json-api/README.md)
