@@ -30,21 +30,26 @@ The online CMS includes the following features for free:
 * Single Content Folder
 * Single Resources Folder
 
-#### Additionally with Paid Plans
+#### Additionally with Solo Plan
 
 Elements CMS currently offers Solo and Studio plans. If you need to switch between them, see [Upgrading and Downgrading Plans](upgrading-and-downgrading-plans.md).
 
 * Multiple Users and Groups
 * Multiple Content Folders
 * Multiple Resources Folders
-* [Webhook Support](webhooks.md)
-* [AI Writing Assistant](ai-writing-assistant.md) (Studio)
 * Frontmatter UI Manager
 * Resize and Compress images on upload
 * Sub Folder support for Content and Uploads
-* Custom Appearance and Typography
-* Custom Branding
 * License Manager / Domain Transfer
+
+#### Additionally with Studio Plan
+
+* Whitelabel theming
+* Unlimited sub-domains
+* [Webhook Support](webhooks.md)
+* [MCP Server](../mcp/)
+* [JSON API](../json-api/)
+* [AI Writing Assistant](ai-writing-assistant.md)
 
 #### JSON REST API
 

@@ -8,7 +8,7 @@ icon: screwdriver-wrench
 Most CMS issues come down to a small set of root causes — a wrong page extension, a missing PHP extension, a filename casing mismatch, or a misconfigured `.htaccess`. This page walks through the symptoms you're likely to see, grouped by where they show up.
 
 {% hint style="danger" %}
-Elements CMS [requires PHP 8.1](system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
+Elements CMS [requires PHP 8.4](system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
 {% endhint %}
 
 ### Page-level issues

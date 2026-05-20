@@ -9,7 +9,7 @@ icon: desktop
 
 Elements CMS runs on standard PHP hosting and does not require a database server.
 
-* The Elements CMS **requires PHP 8.1** or newer to be installed on your server, including the following PHP extensions:
+* The Elements CMS **requires PHP 8.4** or newer to be installed on your server, including the following PHP extensions:
   * **json**
   * **session**
   * **curl**
@@ -20,12 +20,12 @@ Elements CMS runs on standard PHP hosting and does not require a database server
 * Windows web servers are not officially supported.
 
 {% hint style="danger" %}
-Elements CMS [requires PHP 8.1](system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
+Elements CMS [requires PHP 8.4](system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
 {% endhint %}
 
 #### Online CMS Editor Requirements
 
-* The Online CMS Editor **requires PHP 8.1** or newer to be installed on your server.
+* The Online CMS Editor **requires PHP 8.4** or newer to be installed on your server.
 * The Online Editor setup checks for the `json`, `session`, `curl`, and `mbstring` PHP extensions.
 * The Online Editor config directory must be writable.
 * Also requires JavaScript to be enabled in your browser.
