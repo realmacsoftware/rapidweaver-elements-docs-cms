@@ -23,9 +23,11 @@ Creem sends customer portal access by email. If you request a portal link, check
 
 ## Domain coverage
 
-Each license key can be active on one top-level domain at a time. That license also covers all subdomains for the same top-level domain.
+Each license key can be active on one top-level domain at a time. A Free or Solo license only covers a single top level domain, for example:
 
-For example, one license key covers all of these domains:
+* `mydomain.com`
+
+**The Studio license covers all subdomains for the same top-level domain.** For example, one Studio license key would covers all of these domains:
 
 * `mydomain.com`
 * `blog.mydomain.com`
