@@ -3,7 +3,7 @@ description: Connect Claude, Cursor, and other AI assistants to the Online Edito
 icon: sparkles
 ---
 
-# MCP Server
+# Overview and Setup
 
 The Elements CMS Online Editor includes an MCP server for AI assistants that support the Model Context Protocol. Once connected, an assistant can browse your site's content, draft and publish posts, organise resources, restore versions, and manage supported settings through ordinary conversation.
 
@@ -34,11 +34,11 @@ You need:
 
 ### Choose a connection method
 
-| Method | Best for | What you do |
-| --- | --- | --- |
-| **Download a `.mcpb` bundle** | Claude Desktop | Download a bundle from the Online Editor and double-click it. |
-| **Use a server URL and token** | Cursor, MCP Inspector, custom clients | Copy the endpoint URL, create an `mcp_...` token, and configure your client. |
-| **OAuth sign-in** | Claude on the web and clients that open a browser flow | Paste the endpoint URL and sign in through the Online Editor. |
+| Method                         | Best for                                               | What you do                                                                  |
+| ------------------------------ | ------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| **Download a `.mcpb` bundle**  | Claude Desktop                                         | Download a bundle from the Online Editor and double-click it.                |
+| **Use a server URL and token** | Cursor, MCP Inspector, custom clients                  | Copy the endpoint URL, create an `mcp_...` token, and configure your client. |
+| **OAuth sign-in**              | Claude on the web and clients that open a browser flow | Paste the endpoint URL and sign in through the Online Editor.                |
 
 All three methods connect to the same MCP endpoint and act as the user you authorise.
 
@@ -55,6 +55,8 @@ This is the fastest way to connect Claude Desktop.
 
 Each bundle download creates its own private MCP token. Removing the bundle from Claude Desktop does not revoke the server token, so revoke unused bundle tokens from **AI** > **Connections**.
 
+{% embed url="https://youtu.be/dy_hvVQ6a38" %}
+
 ### Method B: Manual URL and token
 
 Use this for clients that let you configure a custom MCP server URL.
@@ -63,7 +65,7 @@ Use this for clients that let you configure a custom MCP server URL.
 
 In the Online Editor, open **AI** > **Connections**. The endpoint looks like:
 
-```text
+```
 https://example.test/editor/mcp.php
 ```
 
@@ -77,13 +79,13 @@ Under **Connect any MCP client**, click **Create token**. Give it a clear name, 
 
 Preferred header:
 
-```text
+```
 Authorization: Bearer mcp_exampletoken000000000000
 ```
 
 Fallback URL, for clients that cannot set headers:
 
-```text
+```
 https://example.test/editor/mcp.php?token=mcp_exampletoken000000000000
 ```
 
@@ -95,7 +97,7 @@ Prefer the `Authorization` header. Tokens in URLs can appear in browser history,
 
 Some MCP clients can open a browser sign-in flow. In those clients, paste only the MCP endpoint URL:
 
-```text
+```
 https://example.test/editor/mcp.php
 ```
 
@@ -113,18 +115,18 @@ The assistant should list tools such as `content_list_items`, `content_read_item
 
 For the full list of tools and example prompts, see the [Tools Reference](tools.md).
 
-| Area | What the assistant can do |
-| --- | --- |
-| **Content** | List and create collections, read items, create drafts, update posts, and delete items. |
-| **Resources and media** | List, upload, rename, move, delete files, and create resource subfolders. |
-| **Site settings** | Read theme settings, update theme settings as an owner, list users, and list webhooks. |
-| **Version history** | List versions, read a saved version, or restore an older version. |
-| **MCP resources** | Read browseable context such as `cms://site`, `cms://collections`, and collection listings. |
+| Area                    | What the assistant can do                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------- |
+| **Content**             | List and create collections, read items, create drafts, update posts, and delete items.     |
+| **Resources and media** | List, upload, rename, move, delete files, and create resource subfolders.                   |
+| **Site settings**       | Read theme settings, update theme settings as an owner, list users, and list webhooks.      |
+| **Version history**     | List versions, read a saved version, or restore an older version.                           |
+| **MCP resources**       | Read browseable context such as `cms://site`, `cms://collections`, and collection listings. |
 
 ### API keys and MCP tokens
 
 {% hint style="info" %}
-`api_...` keys and `mcp_...` tokens are separate. `api_...` keys authenticate the [JSON REST API](../json-api/README.md). `mcp_...` tokens authenticate the MCP server for AI assistants. They do not work interchangeably.
+`api_...` keys and `mcp_...` tokens are separate. `api_...` keys authenticate the [JSON REST API](../json-api/). `mcp_...` tokens authenticate the MCP server for AI assistants. They do not work interchangeably.
 {% endhint %}
 
 ### Managing tokens and clients
@@ -141,11 +143,11 @@ Good habits:
 
 ### Troubleshooting
 
-| You see | What it means | Fix |
-| --- | --- | --- |
-| `MCP access requires Studio plan for this domain` | The domain does not have active MCP access. | Check the license in the Online Editor and activate or upgrade the plan. |
-| `Missing bearer token` or `Invalid bearer token` | The client did not send a token, the token was copied incorrectly, or it has been revoked. | Create a new token or download a fresh bundle, then reconnect. |
-| The assistant says it has no tools | The URL may be wrong, the license may not include MCP access, or the client may have cached a failed connection. | Re-check the endpoint, confirm the license, then remove and re-add the MCP server in the client. |
-| The token's last-used timestamp never changes | The client is not reaching your CMS. | Confirm the site is reachable over HTTPS and the endpoint URL is not truncated. |
-| The assistant cannot do something the user should be allowed to do | The token may be bound to a lower-privilege user. | Check the token's user on **AI** > **Connections**, then recreate it for the right user if needed. |
-| Claude Desktop shows that the extension failed to start | Claude Desktop could not reach the site, or the bundle token was revoked. | Confirm the site is reachable and download a new bundle if needed. |
+| You see                                                            | What it means                                                                                                    | Fix                                                                                                |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `MCP access requires Studio plan for this domain`                  | The domain does not have active MCP access.                                                                      | Check the license in the Online Editor and activate or upgrade the plan.                           |
+| `Missing bearer token` or `Invalid bearer token`                   | The client did not send a token, the token was copied incorrectly, or it has been revoked.                       | Create a new token or download a fresh bundle, then reconnect.                                     |
+| The assistant says it has no tools                                 | The URL may be wrong, the license may not include MCP access, or the client may have cached a failed connection. | Re-check the endpoint, confirm the license, then remove and re-add the MCP server in the client.   |
+| The token's last-used timestamp never changes                      | The client is not reaching your CMS.                                                                             | Confirm the site is reachable over HTTPS and the endpoint URL is not truncated.                    |
+| The assistant cannot do something the user should be allowed to do | The token may be bound to a lower-privilege user.                                                                | Check the token's user on **AI** > **Connections**, then recreate it for the right user if needed. |
+| Claude Desktop shows that the extension failed to start            | Claude Desktop could not reach the site, or the bundle token was revoked.                                        | Confirm the site is reachable and download a new bundle if needed.                                 |
