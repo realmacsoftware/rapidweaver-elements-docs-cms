@@ -135,10 +135,6 @@ Deleting `config.php` removes the Online Editor setup/configuration, including t
 
 See [Resetting the installation](../cms/components/online-editor.md#resetting-the-installation) for the full Online Editor reset notes.
 
-#### Comments aren't appearing publicly
-
-Comments are moderated by default. New submissions wait for approval — sign into the [Online CMS Editor](../online-cms-editor/) and approve them from the moderation view.
-
 ### Performance and logs
 
 #### Pages feel slow on the first load

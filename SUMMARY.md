@@ -7,6 +7,12 @@
   * [License Keys](online-cms-editor/license-keys.md)
   * [Upgrading and Downgrading Plans](online-cms-editor/upgrading-and-downgrading-plans.md)
 
+## Getting Started
+
+* [Quickstart](getting-started/quickstart.md)
+* [System Requirements](getting-started/system-requirements.md)
+* [Troubleshooting](getting-started/troubleshooting.md)
+
 ## MCP Server
 
 * [Overview and Setup](mcp/README.md)
@@ -27,12 +33,6 @@
   * [Search and Feeds](json-api/reference/search-and-feeds.md)
 * [Errors](json-api/errors.md)
 * [Changelog](json-api/changelog.md)
-
-## Getting Started
-
-* [Quickstart](getting-started/quickstart.md)
-* [System Requirements](getting-started/system-requirements.md)
-* [Troubleshooting](getting-started/troubleshooting.md)
 
 ## CMS
 
