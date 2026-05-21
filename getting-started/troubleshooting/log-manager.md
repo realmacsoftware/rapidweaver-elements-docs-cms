@@ -30,11 +30,11 @@ If you ever need to reset your password, simply delete the following file from y
 
 The next time you access the Log Manager, you’ll be prompted to create a new password.
 
-<figure><img src="../.gitbook/assets/CleanShot 2025-10-24 at 11.47.54@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2025-10-24 at 11.47.54@2x.png" alt=""><figcaption></figcaption></figure>
 
 Once you’ve set a password and logged in, you’ll gain access to the Log Manager dashboard. From there, you can easily review log statistics, clean up all logs at once, or view and remove individual log files as needed.
 
-<figure><img src="../.gitbook/assets/CleanShot 2025-10-24 at 12.07.08@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2025-10-24 at 12.07.08@2x.png" alt=""><figcaption></figcaption></figure>
 
 ### Option 2: Command Line Utility
 

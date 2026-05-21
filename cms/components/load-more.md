@@ -48,7 +48,7 @@ If you want to change how many items load per click, change the **Items Per Page
 Make sure it's placed inside a Collection's After zone, not at the page level. Outside a Collection, it has no parent to fetch from.
 
 **Clicking the button does nothing.**\
-The component fetches via the CMS API, which means the page must be served from a working PHP environment. If the page extension is `.html`, or PHP is misconfigured, the request will silently fail. See [Troubleshooting](../../getting-started/troubleshooting.md).
+The component fetches via the CMS API, which means the page must be served from a working PHP environment. If the page extension is `.html`, or PHP is misconfigured, the request will silently fail. See [Troubleshooting](../../getting-started/troubleshooting/).
 
 **Both Pagination and Load More appear on the page.**\
 Remove one — they can't coexist. They both manage the same paging state and will fight each other.

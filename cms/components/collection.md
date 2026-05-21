@@ -62,7 +62,7 @@ The Collection can publish a feed and a sitemap of its items, regenerated automa
 * **RSS** toggle, **Folder**, and **Filename** — when enabled, an RSS XML file is written into the chosen folder (default: the page's directory). Filename defaults to `feed.xml`.
 * **Sitemap** toggle, **Folder**, and **Filename** — same shape as RSS. Filename defaults to `sitemap.xml`.
 
-You can read the active feed and sitemap URLs from `{{collection.rssURL}}` and `{{collection.sitemapURL}}` (see [Available data](#available-data) below).
+You can read the active feed and sitemap URLs from `{{collection.rssURL}}` and `{{collection.sitemapURL}}` (see [Available data](collection.md#available-data) below).
 
 {% hint style="info" %}
 Append `?regenerate_rss=1` or `?regenerate_sitemap=1` to the page's URL to force a rebuild. The CMS otherwise regenerates these files lazily as content changes.
@@ -112,10 +112,10 @@ A common pattern: put a Text component into the Collection's After zone with a l
 Check the Folder, then the filters. Items with `status: draft` are hidden by default, and future-dated posts are filtered out by the Date filter unless you change it.
 
 **The page renders forever or shows a 500 error.**\
-Almost always a `.html` extension or a missing PHP extension. See [Troubleshooting](../../getting-started/troubleshooting.md).
+Almost always a `.html` extension or a missing PHP extension. See [Troubleshooting](../../getting-started/troubleshooting/).
 
 **Links go to the right page but with `?item=…` in the URL.**\
 Either the Pretty URLs toggle is off, or the `.htaccess` rule isn't in place. See [Pretty URLs](../pretty-urls.md).
 
 **RSS feed isn't updating after a publish.**\
-Append `?regenerate_rss=1` to force a rebuild. If the issue persists, check the [Log Manager](../log-manager.md) for write errors on the destination folder.
+Append `?regenerate_rss=1` to force a rebuild. If the issue persists, check the [Log Manager](../../getting-started/troubleshooting/log-manager.md) for write errors on the destination folder.

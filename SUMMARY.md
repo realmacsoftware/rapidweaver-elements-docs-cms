@@ -11,7 +11,28 @@
 
 * [Quickstart](getting-started/quickstart.md)
 * [System Requirements](getting-started/system-requirements.md)
-* [Troubleshooting](getting-started/troubleshooting.md)
+* [Troubleshooting](getting-started/troubleshooting/README.md)
+  * [Log Manager](getting-started/troubleshooting/log-manager.md)
+
+## CMS
+
+* [Components](cms/components/README.md)
+  * [Collection](cms/components/collection.md)
+  * [Collection Pagination](cms/components/collection-pagination.md)
+  * [Comments](cms/components/comments.md)
+  * [Item](cms/components/item.md)
+  * [Load More](cms/components/load-more.md)
+  * [Online Editor](cms/components/online-editor.md)
+  * [Related Items](cms/components/related-items.md)
+  * [Search](cms/components/search.md)
+  * [Tag List](cms/components/tag-list.md)
+* [Markdown](cms/markdown/README.md)
+  * [Frontmatter](cms/markdown/frontmatter.md)
+  * [Styling Lists](cms/markdown/styling-lists.md)
+  * [Embedding Media](cms/markdown/embedding-media.md)
+* [Pretty URL's](cms/pretty-urls.md)
+* [Template Data](cms/template-data.md)
+* [Twig](cms/twig.md)
 
 ## MCP Server
 
@@ -33,24 +54,3 @@
   * [Search and Feeds](json-api/reference/search-and-feeds.md)
 * [Errors](json-api/errors.md)
 * [Changelog](json-api/changelog.md)
-
-## CMS
-
-* [Markdown](cms/markdown/README.md)
-  * [Frontmatter](cms/markdown/frontmatter.md)
-  * [Styling Lists](cms/markdown/styling-lists.md)
-  * [Embedding Media](cms/markdown/embedding-media.md)
-* [Pretty URL's](cms/pretty-urls.md)
-* [Template Data](cms/template-data.md)
-* [Twig](cms/twig.md)
-* [Log Manager](cms/log-manager.md)
-* [Components](cms/components/README.md)
-  * [Collection](cms/components/collection.md)
-  * [Collection Pagination](cms/components/collection-pagination.md)
-  * [Comments](cms/components/comments.md)
-  * [Item](cms/components/item.md)
-  * [Load More](cms/components/load-more.md)
-  * [Online Editor](cms/components/online-editor.md)
-  * [Related Items](cms/components/related-items.md)
-  * [Search](cms/components/search.md)
-  * [Tag List](cms/components/tag-list.md)

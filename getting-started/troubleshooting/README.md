@@ -8,7 +8,7 @@ icon: screwdriver-wrench
 Most CMS issues come down to a small set of root causes — a wrong page extension, a missing PHP extension, a filename casing mismatch, or a misconfigured `.htaccess`. This page walks through the symptoms you're likely to see, grouped by where they show up.
 
 {% hint style="danger" %}
-Elements CMS [requires PHP 8.4](system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
+Elements CMS [requires PHP 8.4](../system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
 {% endhint %}
 
 ### Page-level issues
@@ -73,7 +73,7 @@ Fix it everywhere:
 * Rename the resource to lowercase in the Resources area in Elements.
 * Update every reference in your Markdown files to match.
 
-See [Embedding Media](../cms/markdown/embedding-media.md) for the full naming rules.
+See [Embedding Media](../../cms/markdown/embedding-media.md) for the full naming rules.
 
 #### Images uploaded via the Online Editor don't appear in Elements
 
@@ -87,15 +87,15 @@ If you need a file to be visible in both places, upload it from Elements first, 
 
 Most often `mod_rewrite` isn't enabled on your server, or `AllowOverride` is too restrictive for your `.htaccess` to be read. Ask your host to confirm both are enabled.
 
-If `.htaccess` _is_ being read but pretty URLs still 404, double-check the regex in the rewrite rules matches your folder name exactly. See [Pretty URLs](../cms/pretty-urls.md).
+If `.htaccess` _is_ being read but pretty URLs still 404, double-check the regex in the rewrite rules matches your folder name exactly. See [Pretty URLs](../../cms/pretty-urls.md).
 
 #### Every page load goes through a redirect
 
-The **Pretty URLs** toggle is off on the component generating the links — links are written in the old `?item=slug` form, and the 301 rule is rewriting them to the clean form on every click. Switch the toggle on inside the inspector for the [Collection](../cms/components/collection.md), [Search](../cms/components/search.md), or [Tag List](../cms/components/tag-list.md).
+The **Pretty URLs** toggle is off on the component generating the links — links are written in the old `?item=slug` form, and the 301 rule is rewriting them to the clean form on every click. Switch the toggle on inside the inspector for the [Collection](../../cms/components/collection.md), [Search](../../cms/components/search.md), or [Tag List](../../cms/components/tag-list.md).
 
 #### CSS or JavaScript breaks after enabling pretty URLs
 
-Your project template is missing the `<base href>` tag, or it's set incorrectly. Set it to `/` if your site is published at the domain root, or `/yourfolder/` for subfolder publishing. See [Pretty URLs](../cms/pretty-urls.md).
+Your project template is missing the `<base href>` tag, or it's set incorrectly. Set it to `/` if your site is published at the domain root, or `/yourfolder/` for subfolder publishing. See [Pretty URLs](../../cms/pretty-urls.md).
 
 ### RSS and sitemap issues
 
@@ -115,7 +115,7 @@ Check that:
 
 * JavaScript is enabled in the browser.
 * The page contains _only_ the Online Editor component, with no Navigation, Footer, or other layout components on the same page.
-* Your server meets the [System Requirements](system-requirements.md).
+* Your server meets the [System Requirements](../system-requirements.md).
 
 #### I need to reset the Online Editor installation
 
@@ -133,17 +133,17 @@ Connect to your server using FTP, SFTP, SSH, or your hosting file manager, delet
 Deleting `config.php` removes the Online Editor setup/configuration, including the admin account and configured folders. It does not delete Markdown content or uploaded resources.
 {% endhint %}
 
-See [Resetting the installation](../cms/components/online-editor.md#resetting-the-installation) for the full Online Editor reset notes.
+See [Resetting the installation](../../cms/components/online-editor.md#resetting-the-installation) for the full Online Editor reset notes.
 
 ### Performance and logs
 
 #### Pages feel slow on the first load
 
-The CMS generates RSS, sitemap, and search index files lazily. The first request after a publish does the work; subsequent requests are served from cache. If a particular page consistently feels slow, check the [Log Manager](../cms/log-manager.md) for repeated errors that might be retried on every request.
+The CMS generates RSS, sitemap, and search index files lazily. The first request after a publish does the work; subsequent requests are served from cache. If a particular page consistently feels slow, check the [Log Manager](log-manager.md) for repeated errors that might be retried on every request.
 
 #### Log files are growing quickly
 
-Use the [Log Manager](../cms/log-manager.md) to inspect and trim logs. For high-traffic sites, set up a weekly cron job — the same page documents the command and an example crontab entry.
+Use the [Log Manager](log-manager.md) to inspect and trim logs. For high-traffic sites, set up a weekly cron job — the same page documents the command and an example crontab entry.
 
 ### Still stuck?
 
