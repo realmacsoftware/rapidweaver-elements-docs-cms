@@ -121,10 +121,10 @@ Check that:
 
 To run first-time setup again, delete the Online Editor's `config.php` file from the published site. Back it up first if you might need the current admin account, content folder, resource folder, or workspace settings.
 
-The file lives in the published editor assets PHP folder, equivalent to:
+The file lives in the following location:
 
 ```
-components/shared/assets/editor/php/config.php
+/rw/elements/com.elementsplatform.cms/editor/php/config.php
 ```
 
 Connect to your server using FTP, SFTP, SSH, or your hosting file manager, delete `php/config.php`, then reload the admin page and complete setup again.
