@@ -31,6 +31,20 @@ Sign in to the Online Editor as an owner, then open **AI → Providers**.
 
 The Online Editor verifies the key before saving it, so obvious provider authentication errors appear during setup instead of the first time an editor tries to generate text.
 
+#### How to generate and use an OpenAI API key
+
+Learn how to generate an OpenAI API key and add it to the Markdown Editor for the AI Writing Assistant.
+
+{% embed url="https://youtu.be/Vx6Nbb3lN3Y" %}
+
+#### How to generate and use a Claude API key
+
+Learn how to generate an Anthropic Claude API key and add it to the Markdown Editor for the AI Writing Assistant.
+
+{% embed url="https://youtu.be/VqQjN8TYIRw" %}
+
+
+
 ### Enable the writing assistant
 
 After saving a provider key, open **AI → Features**.
