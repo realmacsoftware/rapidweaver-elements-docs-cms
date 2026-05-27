@@ -7,17 +7,21 @@ icon: bolt
 
 Elements includes a built-in CMS that makes it easy to create a blog or content-driven site using Markdown files.
 
-The quickest way to get started is with the free Microblog project from the built-in Elements Store. This provides a working example of a CMS-powered blog, including post listings, individual post pages, and basic navigation.
-
 {% hint style="danger" %}
 Elements CMS [requires PHP 8.4](system-requirements.md) or newer to be installed on your server. You'll need to **ensure your page extension is set to .php** on any pages you wish to access CMS data from.
 {% endhint %}
 
 #### Microblog Project
 
-Our free [Microblog project](https://store.elementsapp.io/projects/microblog) utilises the Elements CMS to create a straightforward blog. This is an excellent opportunity to understand the setup process and see how everything is integrated.
+The Microblog project in the Elements New Projects window is a pre-built Blog that uses the Elements CMS. It's an excellent resource to examine and see how the CMS is integrated.
 
-{% embed url="https://store.elementsapp.io/projects/microblog" %}
+<figure><img src="../.gitbook/assets/CleanShot 2026-05-27 at 9 .57.56@2x.png" alt=""><figcaption></figcaption></figure>
+
+### How to Set Up the Elements CMS
+
+This video series will walk you though setting sup the Elements CMS inside your Elements project.
+
+{% embed url="https://www.youtube.com/watch?v=NgpV-dAxiJw" %}
 
 #### How the CMS Is Structured
 
