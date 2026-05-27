@@ -14,6 +14,7 @@ Elements CMS runs on standard PHP hosting and does not require a database server
   * **session**
   * **curl**
   * **mbstring**
+  * **Sodium**
 * The bundled Composer dependencies must be present. These are included with the CMS pack when it is published.
 * The Online Editor's PHP config directory must be writable so setup can save its configuration.
 * The PHP installation should be 'as usual'. If it is reduced or modified in any way, the CMS may not function properly.
