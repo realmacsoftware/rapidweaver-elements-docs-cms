@@ -1,5 +1,6 @@
 ---
 description: Add a moderated comments thread to your CMS items.
+hidden: true
 ---
 
 # Comments

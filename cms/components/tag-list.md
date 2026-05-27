@@ -1,5 +1,6 @@
 ---
 description: Display every tag used in a Collection, with optional post counts.
+hidden: true
 ---
 
 # Tag List
