@@ -55,7 +55,11 @@ This is the fastest way to connect Claude Desktop.
 
 Each bundle download creates its own private MCP token. Removing the bundle from Claude Desktop does not revoke the server token, so revoke unused bundle tokens from **AI** > **Connections**.
 
-{% embed url="https://youtu.be/dy_hvVQ6a38" %}
+{% embed url="https://www.youtube.com/watch?v=2-yVxnqkXIA&t=2s" %}
+
+{% embed url="https://www.youtube.com/watch?v=Y1m3106Lnk0" %}
+
+{% embed url="https://www.youtube.com/watch?v=m5IeJeWpLa0" %}
 
 ### Method B: Manual URL and token
 
@@ -92,6 +96,12 @@ https://example.test/editor/mcp.php?token=mcp_exampletoken000000000000
 {% hint style="warning" %}
 Prefer the `Authorization` header. Tokens in URLs can appear in browser history, server logs, proxy logs, analytics, and screenshots.
 {% endhint %}
+
+#### Using the Endpoint URL and token in Codex
+
+The [OpenAI Codex app](https://openai.com/codex/) supports this method, but the UI settings in Codex don't always seem to work. We'd recommend just asking Codex to set up the connection for you. Here's a video showing how this process works.
+
+{% embed url="https://www.youtube.com/watch?v=9e9VQNJittA" %}
 
 ### Method C: OAuth sign-in
 
