@@ -23,6 +23,8 @@ This video series will walk you though setting sup the Elements CMS inside your 
 
 {% embed url="https://www.youtube.com/watch?v=NgpV-dAxiJw" %}
 
+{% embed url="https://www.youtube.com/watch?v=RGWDM9atj24" %}
+
 #### How the CMS Is Structured
 
 CMS content lives inside a dedicated CMS folder in your project. A typical blog setup looks like this:
