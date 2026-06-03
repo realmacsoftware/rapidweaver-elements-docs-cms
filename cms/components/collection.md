@@ -21,13 +21,19 @@ The Collection's inspector is divided into five groups: Settings, Filters, Pagin
 
 #### Settings group
 
-The wiring that connects the Collection to your content.
+The wiring that connects the Collection to your content. In the inspector, each setting appears as its own labelled section: a **section heading** (e.g. _Item Template_) tells you what the setting is for, and the **control beneath it** is the input you edit. Three of these settings use a **Page** picker (so their control is labelled "Page") and one uses a **Folder** picker — "Page" and "Folder" describe the *type* of picker, not the setting's name. Use the section heading to tell them apart.
 
-* **Folder** — the CMS folder to read items from. Required.
-* **Item Template — Page** — the page that displays a single item. Each Collection entry will link here, with the item's slug appended. Typically points at the page that hosts your [Item](item.md) component.
-* **Tag Page Template — Page** — the page that displays posts filtered by tag. Used when the Collection is filtering by a tag from the URL.
-* **Author Page Template — Page** — the page that displays posts by an author. Used when the Collection is filtering by an author from the URL.
-* **Pretty URLs** — when enabled, links are written as `/post/my-slug` rather than `/post/?item=my-slug`. Requires an `.htaccess` rule. See [Pretty URLs](../pretty-urls.md). Default: off.
+| Section heading | Control | What it does |
+| --- | --- | --- |
+| **Collection** | Folder picker | Select the folder of content to display in the collection. This is the CMS folder the items are read from. **Required.** |
+| **Item Template** | Page picker | Select the page used to display a single item. Each Collection entry links to this page with the item's slug appended — it typically hosts your [Item](item.md) component. |
+| **Tag Page Template** | Page picker | Select the page used to display tag lists (posts filtered by a tag taken from the URL). |
+| **Author Page Template** | Page picker | Select the page used to display author lists (posts filtered by an author taken from the URL). |
+| **Pretty URLs** | Enable toggle | When on, links are written as `/post/my-slug` rather than `/post/?item=my-slug`. Requires an `.htaccess` rule — see [Pretty URLs](../pretty-urls.md). Default: off. |
+
+{% hint style="info" %}
+The three **Page** pickers look identical in the inspector (all labelled "Page"). Always go by the **section heading** above each one — _Item Template_, _Tag Page Template_, or _Author Page Template_ — to make sure you're setting the right one.
+{% endhint %}
 
 #### Filters group
 
