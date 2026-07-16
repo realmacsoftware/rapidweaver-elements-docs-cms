@@ -105,4 +105,4 @@ Response:
 { "ok": true, "message": "File deleted." }
 ```
 
-From here, browse the [Reference](reference/README.md), read the [Headless Frontend](guides/headless-frontend.md) guide, or use [Content Migration](guides/content-migration.md) for bulk imports.
+From here, browse the [Reference](reference/), read the [Headless Frontend](https://github.com/realmacsoftware/rapidweaver-elements-docs-cms/blob/main/json-api/guides/headless-frontend.md) guide, or use [Content Migration](https://github.com/realmacsoftware/rapidweaver-elements-docs-cms/blob/main/json-api/guides/content-migration.md) for bulk imports.

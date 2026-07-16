@@ -11,17 +11,17 @@ Resources are uploaded media and files, such as images, PDFs, and videos, that C
 
 List entries in a resource folder.
 
-| Field | Value |
-| --- | --- |
-| Auth | Required |
-| Role | Any API key user |
+| Field | Value            |
+| ----- | ---------------- |
+| Auth  | Required         |
+| Role  | Any API key user |
 
 Query string:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `folder` | int | Resource folder index. Defaults to `0`. |
-| `subpath` | string | Optional subfolder to list. |
+| Name      | Type   | Description                             |
+| --------- | ------ | --------------------------------------- |
+| `folder`  | int    | Resource folder index. Defaults to `0`. |
+| `subpath` | string | Optional subfolder to list.             |
 
 Response:
 
@@ -49,20 +49,20 @@ Response:
 
 Upload a file with `multipart/form-data`.
 
-| Field | Value |
-| --- | --- |
-| Auth | Required |
-| Role | Any API key user |
+| Field | Value            |
+| ----- | ---------------- |
+| Auth  | Required         |
+| Role  | Any API key user |
 
 Form fields:
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `file` | file | Required uploaded file bytes. |
-| `folder` | int | Resource folder index. Defaults to `0`. |
-| `subpath` | string | Optional destination subfolder. |
+| Name      | Type   | Description                             |
+| --------- | ------ | --------------------------------------- |
+| `file`    | file   | Required uploaded file bytes.           |
+| `folder`  | int    | Resource folder index. Defaults to `0`. |
+| `subpath` | string | Optional destination subfolder.         |
 
-The JSON API does not accept base64 resource uploads. See [Uploads](../guides/uploads.md) for worked examples.
+The JSON API does not accept base64 resource uploads. See [Uploads](https://github.com/realmacsoftware/rapidweaver-elements-docs-cms/blob/main/json-api/guides/uploads.md) for worked examples.
 
 Response:
 
@@ -80,10 +80,10 @@ Response:
 
 Rename or move a file.
 
-| Field | Value |
-| --- | --- |
-| Auth | Required |
-| Role | Any API key user |
+| Field | Value            |
+| ----- | ---------------- |
+| Auth  | Required         |
+| Role  | Any API key user |
 
 Rename body:
 
@@ -113,10 +113,10 @@ Move body:
 
 Delete a file.
 
-| Field | Value |
-| --- | --- |
-| Auth | Required |
-| Role | Any API key user |
+| Field | Value            |
+| ----- | ---------------- |
+| Auth  | Required         |
+| Role  | Any API key user |
 
 Body:
 
@@ -128,10 +128,10 @@ Body:
 
 Create a subfolder inside a resource folder.
 
-| Field | Value |
-| --- | --- |
-| Auth | Required |
-| Role | Any API key user |
+| Field | Value            |
+| ----- | ---------------- |
+| Auth  | Required         |
+| Role  | Any API key user |
 
 Body:
 

@@ -13,11 +13,11 @@ These routes read and narrowly write site-level configuration.
 
 Read the current theme: preset, accent color, fonts, custom palette, surface color, site name, and logo URLs.
 
-| Field | Value |
-| --- | --- |
-| Auth | Required |
-| Role | Owner |
-| Plan | Theme customization access |
+| Field | Value                      |
+| ----- | -------------------------- |
+| Auth  | Required                   |
+| Role  | Owner                      |
+| Plan  | Theme customization access |
 
 Response:
 
@@ -41,11 +41,11 @@ Response:
 
 Update the theme.
 
-| Field | Value |
-| --- | --- |
-| Auth | Required |
-| Role | Owner |
-| Plan | Theme customization access |
+| Field | Value                      |
+| ----- | -------------------------- |
+| Auth  | Required                   |
+| Role  | Owner                      |
+| Plan  | Theme customization access |
 
 Body: any subset of the fields returned by `GET /cms/settings/theme`. Omitted fields are left unchanged.
 
@@ -55,10 +55,10 @@ Body: any subset of the fields returned by `GET /cms/settings/theme`. Omitted fi
 
 List users on the site.
 
-| Field | Value |
-| --- | --- |
-| Auth | Required |
-| Role | Admin |
+| Field | Value    |
+| ----- | -------- |
+| Auth  | Required |
+| Role  | Admin    |
 
 Response:
 
@@ -79,11 +79,11 @@ User management is not exposed on the REST API yet. Use the Online Editor to cre
 
 List configured webhook subscriptions.
 
-| Field | Value |
-| --- | --- |
-| Auth | Required |
-| Role | Owner |
-| Plan | Webhooks access |
+| Field | Value           |
+| ----- | --------------- |
+| Auth  | Required        |
+| Role  | Owner           |
+| Plan  | Webhooks access |
 
 Response:
 
@@ -101,4 +101,4 @@ Response:
 }
 ```
 
-Webhook create, update, and delete are not exposed on the REST API yet. Use the Online Editor. To consume webhook payloads, see [Webhooks](../guides/webhooks.md).
+Webhook create, update, and delete are not exposed on the REST API yet. Use the Online Editor. To consume webhook payloads, see [Webhooks](https://github.com/realmacsoftware/rapidweaver-elements-docs-cms/blob/main/json-api/guides/webhooks.md).

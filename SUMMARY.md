@@ -2,6 +2,7 @@
 
 * [Elements CMS](README.md)
 * [Online CMS Editor](online-cms-editor/README.md)
+  * [CMS MCP Server](online-cms-editor/cms-mcp-server.md)
   * [AI Writing Assistant](online-cms-editor/ai-writing-assistant.md)
   * [Webhooks](online-cms-editor/webhooks.md)
   * [License Keys](online-cms-editor/license-keys.md)
