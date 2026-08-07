@@ -6,7 +6,7 @@
   * [AI Writing Assistant](online-cms-editor/ai-writing-assistant.md)
   * [Webhooks](online-cms-editor/webhooks.md)
   * [License Keys](online-cms-editor/license-keys.md)
-  * [Upgrading and Downgrading Plans](online-cms-editor/upgrading-and-downgrading-plans.md)
+  * [Legacy Licenses and Upgrading to Pro](online-cms-editor/upgrading-and-downgrading-plans.md)
 
 ## Getting Started
 

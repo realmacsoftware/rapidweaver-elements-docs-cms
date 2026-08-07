@@ -54,11 +54,11 @@ components/shared/assets/editor/php/config.php
 
 Delete `php/config.php`, reload your admin page, and complete first-time setup again.
 
-### Free vs. paid features
+### Free vs. Pro features
 
-The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Paid plans unlock multiple users and groups, multiple content and resources folders, sub-folder support, the Frontmatter UI Manager, webhooks, custom branding, and the license/domain manager. Studio also includes the [AI Writing Assistant](../../online-cms-editor/ai-writing-assistant.md).
+The free tier covers a single workspace with one content folder and one resources folder — enough for a blog or small site. Pro unlocks multiple users and groups, multiple content and resources folders, sub-folder support, version history, the Frontmatter UI Manager, webhooks, custom branding, the license/domain manager, the [AI Writing Assistant](../../online-cms-editor/ai-writing-assistant.md), MCP access, and the JSON API.
 
-Elements CMS currently offers Solo and Studio plans. If you need to switch between them, see [Upgrading and Downgrading Plans](../../online-cms-editor/upgrading-and-downgrading-plans.md). See the [Online CMS Editor](../../online-cms-editor/) overview for the full feature comparison.
+Pro is a one-time purchase through FastSpring and covers one top-level domain plus all of its subdomains. Existing Solo and Studio licenses purchased through Creem remain valid. See the [Online CMS Editor](../../online-cms-editor/) overview for the full feature list and [Legacy Licenses and Upgrading to Pro](../../online-cms-editor/upgrading-and-downgrading-plans.md) for legacy license guidance.
 
 ### Keeping content in sync with Elements
 

@@ -7,7 +7,7 @@ icon: webhook
 
 Webhooks let the Online CMS Editor notify another service when content or users change. Use them to trigger a deployment, send a team notification, update a search index, start an automation, or connect the CMS to another part of your workflow.
 
-Webhooks are available with paid plans and are managed by owners in the Online CMS Editor.
+Webhooks require Pro and are managed by owners in the Online CMS Editor.
 
 ### Add a webhook
 

@@ -1,11 +1,11 @@
 ---
-description: Configure and use the Studio AI writing tools inside the Online Editor.
+description: Configure and use the Pro AI writing tools inside the Online Editor.
 icon: sparkles
 ---
 
 # AI Writing Assistant
 
-The **AI Writing Assistant** is a Studio feature for the Online Editor. It adds writing tools directly to the WYSIWYG Markdown editor, so editors can rewrite, continue, summarise, translate, fix grammar, or run a custom prompt without leaving the page they are editing.
+The **AI Writing Assistant** is a Pro feature for the Online Editor. It adds writing tools directly to the WYSIWYG Markdown editor, so editors can rewrite, continue, summarise, translate, fix grammar, or run a custom prompt without leaving the page they are editing.
 
 The feature uses your own AI provider account. Elements CMS does not include bundled AI usage or bill you for generated text; the site owner brings an API key from Anthropic, OpenAI, or Google and pays that provider directly.
 
@@ -13,7 +13,7 @@ The feature uses your own AI provider account. Elements CMS does not include bun
 
 To use the AI Writing Assistant, your site needs:
 
-* An active **Studio** license.
+* An active **Pro** license.
 * The Online Editor running on PHP 8.1 or newer, including the `curl` extension.
 * An owner account to configure AI settings.
 * An API key from Anthropic, OpenAI, or Google.
@@ -92,7 +92,7 @@ The AI Writing Assistant includes:
 ### Troubleshooting
 
 **I do not see the AI page.**\
-AI features require Studio. Open **Workspace → License** and confirm the site has an active Studio license.
+AI features require Pro. Open **Workspace → License** and confirm the site has an active Pro license.
 
 **I do not see the Sparkles button in the editor.**\
 Check **AI → Features** and confirm both **AI features enabled** and **Writing assistant** are turned on. The button is hidden in raw Markdown mode.

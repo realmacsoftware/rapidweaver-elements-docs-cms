@@ -10,12 +10,12 @@ Built around Markdown, the admin lets you create, edit, and manage your content 
 
 For smaller websites, you can get started for free. You can edit a single collection of Markdown content and upload files directly through the admin, making it ideal for blogs and small websites.
 
-When your needs grow, paid plans unlock support for multiple collections, more advanced content structures, AI writing tools, and the flexibility required for larger client projects.
+When your needs grow, Elements CMS Pro unlocks support for multiple collections, more advanced content structures, AI writing tools, and the flexibility required for larger client projects.
 
 If you need to find or recover your license key, see [License Keys](license-keys.md).
 
 {% hint style="success" %}
-The Online CMS Editor is **free for smaller websites**. Choose a paid plan when you need more.
+The Online CMS Editor is **free for smaller websites**. Upgrade to Pro when you need more.
 {% endhint %}
 
 ### Included for Free
@@ -30,9 +30,9 @@ The online CMS includes the following features for free:
 * Single Content Folder
 * Single Resources Folder
 
-#### Additionally with Solo Plan
+#### Additionally with Pro
 
-Elements CMS currently offers Solo and Studio plans. If you need to switch between them, see [Upgrading and Downgrading Plans](upgrading-and-downgrading-plans.md).
+Elements CMS Pro is a one-time purchase through FastSpring. A Pro license covers one top-level domain and all of its subdomains.
 
 * Multiple Users and Groups
 * Multiple Content Folders
@@ -40,16 +40,16 @@ Elements CMS currently offers Solo and Studio plans. If you need to switch betwe
 * Frontmatter UI Manager
 * Resize and Compress images on upload
 * Sub Folder support for Content and Uploads
+* Version History
 * License Manager / Domain Transfer
-
-#### Additionally with Studio Plan
-
 * Whitelabel theming
 * Unlimited sub-domains
 * [Webhook Support](webhooks.md)
 * [MCP Server](../mcp/)
 * [JSON API](../json-api/)
 * [AI Writing Assistant](ai-writing-assistant.md)
+
+If you already own a Solo or Studio license purchased through Creem, see [Legacy Licenses and Upgrading to Pro](upgrading-and-downgrading-plans.md).
 
 #### JSON REST API
 

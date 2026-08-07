@@ -8,7 +8,7 @@ icon: sparkles
 The Elements CMS Online Editor includes an MCP server for AI assistants that support the Model Context Protocol. Once connected, an assistant can browse your site's content, draft and publish posts, organise resources, restore versions, and manage supported settings through ordinary conversation.
 
 {% hint style="warning" %}
-**Studio / MCP access is required.** MCP requires an active license for the site's domain with MCP access enabled. If access lapses, MCP tokens and OAuth clients stop working.
+**Pro / MCP access is required.** MCP requires an active Pro license for the site's domain with MCP access enabled. If access lapses, MCP tokens and OAuth clients stop working.
 {% endhint %}
 
 ### What you can ask it to do
@@ -155,7 +155,7 @@ Good habits:
 
 | You see                                                            | What it means                                                                                                    | Fix                                                                                                |
 | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `MCP access requires Studio plan for this domain`                  | The domain does not have active MCP access.                                                                      | Check the license in the Online Editor and activate or upgrade the plan.                           |
+| `MCP access requires Pro plan for this domain`                     | The domain does not have active MCP access.                                                                      | Check the license in the Online Editor and activate or purchase Pro.                               |
 | `Missing bearer token` or `Invalid bearer token`                   | The client did not send a token, the token was copied incorrectly, or it has been revoked.                       | Create a new token or download a fresh bundle, then reconnect.                                     |
 | The assistant says it has no tools                                 | The URL may be wrong, the license may not include MCP access, or the client may have cached a failed connection. | Re-check the endpoint, confirm the license, then remove and re-add the MCP server in the client.   |
 | The token's last-used timestamp never changes                      | The client is not reaching your CMS.                                                                             | Confirm the site is reachable over HTTPS and the endpoint URL is not truncated.                    |

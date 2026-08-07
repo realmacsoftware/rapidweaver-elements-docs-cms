@@ -10,7 +10,7 @@ The Elements CMS Online Editor includes a token-authenticated JSON REST API for 
 If you want Claude, Cursor, or another AI assistant to manage the CMS through conversation, use the [MCP Server](../mcp/) instead.
 
 {% hint style="warning" %}
-**Studio / JSON API access is required.** Every `/api/*` route, including public reads, requires an active license for the site's domain with JSON API access enabled. Without one, every request returns `402 Payment Required`.
+**Pro / JSON API access is required.** Every `/api/*` route, including public reads, requires an active Pro license for the site's domain with JSON API access enabled. Without one, every request returns `402 Payment Required`.
 {% endhint %}
 
 ### Start here

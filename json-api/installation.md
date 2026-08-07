@@ -6,7 +6,7 @@ icon: plug
 # Installation
 
 {% hint style="warning" %}
-**Studio / JSON API access is required.** Every route of the JSON API, including the status ping, RSS feeds, sitemap, search index, and public item reads, returns `402 Payment Required` unless the site has an active license with JSON API access enabled.
+**Pro / JSON API access is required.** Every route of the JSON API, including the status ping, RSS feeds, sitemap, search index, and public item reads, returns `402 Payment Required` unless the site has an active Pro license with JSON API access enabled.
 {% endhint %}
 
 ### Prerequisites
@@ -39,7 +39,7 @@ Useful non-200 responses:
 
 | Status                      | Meaning                                                              | Fix                                                                                                                                         |
 | --------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `402 Payment Required`      | The API is reachable, but this domain does not have JSON API access. | Activate a license with JSON API access, or see [Upgrading and Downgrading Plans](../online-cms-editor/upgrading-and-downgrading-plans.md). |
+| `402 Payment Required`      | The API is reachable, but this domain does not have JSON API access. | Activate an existing Pro license or purchase Pro from **Workspace > License**. |
 | `401 Unauthorized`          | The route needs authentication.                                      | Create and send an `api_...` key.                                                                                                           |
 | `500 Internal Server Error` | The server could not run the API route.                              | Check PHP configuration and the server error log.                                                                                           |
 
