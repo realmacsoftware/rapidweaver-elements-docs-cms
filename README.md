@@ -29,6 +29,12 @@ Built around Markdown, it gives you full control over your content while keeping
 
 It’s ideal for static websites that need dynamic content updates, i.e. blogs, portfolios, team pages, product listings, and more.
 
+{% hint style="warning" %}
+The base version of the **E**lements CMS is included for free with every Elements licence. If you require additional advanced CMS features, you can purchase a separate CMS Pro license.
+
+The CMS Pro license is NOT included with your Elements license, and is an additional one-time purchase, per domain. [Learn more about the CMS Pro license](online-cms-editor/).
+{% endhint %}
+
 ### Benefits of a Markdown Based CMS
 
 Using flat Markdown files for content comes with numerous benefits, especially when paired with a static site builder like Elements.

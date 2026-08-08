@@ -18,9 +18,9 @@ If you need to find or recover your license key, see [License Keys](license-keys
 The Online CMS Editor is **free for smaller websites**. Upgrade to Pro when you need more.
 {% endhint %}
 
-### Included for Free
+### Included for Free with Elements
 
-The online CMS includes the following features for free:
+The free version of the Elements CMS is included with you Elements license, and includes the following features:
 
 * WYSIWYG Markdown Editor
 * Create Markdown files
@@ -30,9 +30,9 @@ The online CMS includes the following features for free:
 * Single Content Folder
 * Single Resources Folder
 
-#### Additionally with Pro
+#### Additionally with a Pro CMS License:
 
-Elements CMS Pro is a one-time purchase through FastSpring. A Pro license covers one top-level domain and all of its subdomains.
+The Elements CMS Pro license is a one-time purchase through FastSpring. A Pro license covers one top-level domain and all of its subdomains. The CMS Pro license is NOT included with your Elements license, and is an additional one-time purchase.
 
 * Multiple Users and Groups
 * Multiple Content Folders
